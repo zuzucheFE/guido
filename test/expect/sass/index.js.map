@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./index.js"],"names":["console","log"],"mappings":";;;;;;AAAA;;AAEAA,SAAQC,GAAR,CAAY,8BAAZ,E","file":"index.js","sourcesContent":["import './index.scss';\n\nconsole.log('body background color is red');\n\n\n/** WEBPACK FOOTER **\n ** ./index.js\n **/"],"sourceRoot":""}

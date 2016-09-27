@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./js/index.js"],"names":["console","log"],"mappings":";;;;;;AAAA;;AAEAA,SAAQC,GAAR,CAAY,SAAZ,E","file":"index.js","sourcesContent":["import './css/index.scss';\n\nconsole.log('sprites');\n\n\n/** WEBPACK FOOTER **\n ** ./js/index.js\n **/"],"sourceRoot":""}
