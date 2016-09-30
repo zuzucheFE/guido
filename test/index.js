@@ -17,7 +17,6 @@ function testBuild(options, fixtureDir) {
         const expectDir = path.join(__dirname, 'expect', fixtureDir);
 
         process.chdir(cwd);
-
         del.sync(outputDir);
 
         options.cwd = cwd;
@@ -39,6 +38,8 @@ function testBuild(options, fixtureDir) {
                 expect(outputFile).toEqual(expectFile);
             });
 
+            //del.sync(outputDir);
+
             resolve();
         });
     });
@@ -47,13 +48,23 @@ function testBuild(options, fixtureDir) {
 
 describe('Build', function() {
     this.timeout(50000);
-    // it('es6 to es5', function() {
-    //     return testBuild({}, 'es6-to-es5');
-    // });
+    
+    it('es6 to es5', function() {
+        return testBuild({}, 'es6-to-es5');
+    });
+    it('css', function() {
+        return testBuild({}, 'css');
+    });
     it('sass', function() {
         return testBuild({}, 'sass');
     });
     // it('sprites', function() {
     //     return testBuild({}, 'sprites');
     // });
+    it('handlebars', function() {
+        return testBuild({}, 'handlebars');
+    });
+    it('image-dataurl', function() {
+        return testBuild({}, 'image-dataurl');
+    });
 });

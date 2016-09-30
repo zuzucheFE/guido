@@ -1,5 +1,5 @@
 module.exports = {
     "entry": {
-        "index": "./index.js"
+        "index": "./src/js/index.js"
     }
 };
