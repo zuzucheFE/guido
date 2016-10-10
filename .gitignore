@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 npm-debug.log
 .idea
+test/fixtures/**/dist
+npm-debug.log
