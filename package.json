@@ -11,7 +11,6 @@
     "sap": "./bin/sap.js"
   },
   "dependencies": {
-    "assets-webpack-plugin": "^3.4.0",
     "autoprefixer": "^6.5.0",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
@@ -22,31 +21,32 @@
     "babel-preset-es2015-ie": "^6.6.2",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
+    "bluebird": "^3.4.6",
     "commander": "^2.9.0",
     "css-loader": "^0.23.1",
     "del": "^2.2.2",
-    "eslint": "^3.6.0",
-    "eslint-loader": "^1.5.0",
+    "eslint": "^3.11.1",
+    "eslint-loader": "^1.6.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "handlebars": "^4.0.5",
+    "glob": "^7.1.0",
+    "handlebars": "^4.0.6",
     "handlebars-loader": "^1.4.0",
-    "html-webpack-plugin": "^2.22.0",
+    "html-webpack-plugin": "^2.24.1",
     "image-webpack-loader": "^2.0.0",
     "json-loader": "^0.5.4",
     "merge": "^1.2.0",
-    "node-sass": "^3.10.0",
+    "node-sass": "^3.11.2",
     "postcss-loader": "^0.13.0",
     "postcss-sprites": "^4.0.0",
     "sass-loader": "^3.2.3",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "expect": "^1.20.2",
-    "glob": "^7.1.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.1.2"
   }
 }
