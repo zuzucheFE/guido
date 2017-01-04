@@ -1,20 +1,25 @@
 {
   "env": {
+    "es6": true,
     "browser": true,
-    "node": false
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "rules": {
-    // 必须分号
-    "semi": [2, "always"],
+    // 使用分号: 报错级别, 必须
+    "semi": ["error", "always"],
 
-    // 不限制连续的空行数量
-    "no-multiple-empty-lines": 0,
+    // 禁止出现多行空行: 关闭
+    "no-multiple-empty-lines": "off",
 
     // 禁止出现多个空格,不包括缩进
-    "no-multi-spaces": 2,
+    "no-multi-spaces": "error",
 
     // 匿名函数需要空格，命名的不需要
-    "space-before-function-paren": [2, {
+    "space-before-function-paren": ["error", {
       "anonymous": "always",
       "named": "never"
     }],
@@ -26,11 +31,11 @@
     "comma-style": ["error", "last"],
 
     // 要求使用骆驼拼写法
-    "camelcase": [2, {
+    "camelcase": ["error", {
       "properties": "always"
     }],
 
     // 禁止使用eval()
-    "no-eval": 2
+    "no-eval": "error"
   }
 }
