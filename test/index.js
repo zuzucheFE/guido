@@ -8,6 +8,9 @@ const glob = require('glob');
 const del = require('del');
 const build = require('../lib/build');
 
+function readFileSync(s) {
+    return fs.readFileSync(s, 'utf-8');
+}
 
 function testBuild(options, fixtureDir) {
     return new Promise(function(resolve) {
@@ -32,13 +35,11 @@ function testBuild(options, fixtureDir) {
             });
 
             actualFiles.forEach(function (file) {
-                const outputFile = fs.readFileSync(path.join(outputDir, file), 'utf-8');
-                const expectFile = fs.readFileSync(path.join(expectDir, file), 'utf-8');
+                const outputFile = readFileSync(path.join(outputDir, file));
+                const expectFile = readFileSync(path.join(expectDir, file));
 
                 expect(outputFile).toEqual(expectFile);
             });
-
-            //del.sync(outputDir);
 
             resolve();
         });
@@ -48,7 +49,7 @@ function testBuild(options, fixtureDir) {
 
 describe('Build', function() {
     this.timeout(50000);
-    
+
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
     });
@@ -66,5 +67,10 @@ describe('Build', function() {
     });
     it('image-dataurl', function() {
         return testBuild({}, 'image-dataurl');
+    });
+    it('template', function() {
+        return testBuild({
+            hash: true
+        }, 'template');
     });
 });
