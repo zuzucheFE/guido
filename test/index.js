@@ -59,9 +59,18 @@ describe('Build', function() {
     it('sass', function() {
         return testBuild({}, 'sass');
     });
-    // it('sprites', function() {
-    //     return testBuild({}, 'sprites');
-    // });
+    it('sprites', function() {
+        return testBuild({}, 'sprites');
+    });
+    it('sprites-retina', function() {
+        return testBuild({}, 'sprites-retina');
+    });
+    it('sprites-split', function() {
+        return testBuild({}, 'sprites-split');
+    });
+    it('sprites-split-retina', function() {
+        return testBuild({}, 'sprites-split-retina');
+    });
     it('handlebars', function() {
         return testBuild({}, 'handlebars');
     });

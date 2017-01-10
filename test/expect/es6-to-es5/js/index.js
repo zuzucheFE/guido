@@ -48,7 +48,11 @@
 	
 	var _say = __webpack_require__(1);
 	
-	(0, _say.say)();
+	var _say2 = _interopRequireDefault(_say);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _say2.default)();
 
 /***/ },
 /* 1 */
@@ -59,11 +63,10 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.default = {
-	    say: function say() {
-	        console.log('Hi');
-	    }
-	};
+	exports.default = Say;
+	function Say() {
+	    console.log('Hi');
+	}
 	module.exports = exports['default'];
 
 /***/ }

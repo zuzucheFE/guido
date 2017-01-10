@@ -347,8 +347,8 @@ webpackJsonp([1,0],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./style.css");
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?-sourceMap!./../../../../../node_modules/postcss-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?-sourceMap!./../../../../../node_modules/postcss-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});

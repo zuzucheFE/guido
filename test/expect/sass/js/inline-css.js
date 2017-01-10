@@ -17,7 +17,7 @@ webpackJsonp([1,0],[
 	
 	
 	// module
-	exports.push([module.id, "body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}\n", ""]);
+	exports.push([module.id, "body{background:red;-webkit-transform:translateZ(0);transform:translateZ(0);box-sizing:border-box}body a{color:rgba(0,0,0,.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}", ""]);
 	
 	// exports
 
@@ -347,8 +347,8 @@ webpackJsonp([1,0],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss");
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?minimize&-sourceMap!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?minimize&-sourceMap!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});

@@ -1,3 +1,3 @@
 import '../css/index.scss?__url';
 
-console.log('sprites');
+console.log('sprites-split');
