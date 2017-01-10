@@ -1,2 +1,2 @@
-import { say } from './say';
-say();
+import Say from './say';
+Say();

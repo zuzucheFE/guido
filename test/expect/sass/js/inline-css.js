@@ -1,91 +1,29 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
+webpackJsonp([1,0],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
-	__webpack_require__(6);
+	__webpack_require__(5);
 	
-	var fragment = document.createDocumentFragment();
-	
-	var div1 = document.createElement('div');
-	div1.innerHTML = '<img src="' + __webpack_require__(7) + '">';
-	fragment.appendChild(div1);
-	
-	var div2 = document.createElement('div');
-	div2.innerHTML = '<img src="' + __webpack_require__(1) + '">';
-	fragment.appendChild(div2);
-	
-	var div3 = document.createElement('div');
-	div3.innerHTML = '<img src="' + __webpack_require__(4) + '">';
-	fragment.appendChild(div3);
-	
-	document.body.appendChild(fragment);
+	console.log('sass to css inl1ine-css');
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAsCAMAAAAUyMtVAAAAUVBMVEVHcEwZsf/8NgYjrf8ZsP8asP8asP8ZsP8ZsP8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8asf8asP8asP8Zsf8Zsf/7Ngb7NQX8NQUasf+A7QW+AAAAGnRSTlMA+vwFsA4Z4ybwu6LJYNpuinhBN07RlU7gXkieiXIAAAGCSURBVEjHrZXbkoMgEESHBRFFRPGSrP//oYsScCB4q9p+SgmnnG5aAkxxeKRlWZpePAOspvvM4tV2wzPAquzMM2BlZkMfAVaVHOkjwDHFNdC0mCFMFYcAcXtm0U8RU+cOdZtAux2SgtBNNFyteQ4AFQgAruuISYrgABjdWMzlw1VNMIOLIKzWt36I2jstFIuYUITXqvWHSQjLjLKKi7AyP1bvbd241QanSROmpvAOAAxubYpzoSZkXfUUv8H6yREiZCa35xgAUTqDO1F03nrzMf1r9YKEKH2KqvSGld+irdQ+AG8RMfhTJ10RHVyJRubOYiWAy5CNSE4aA4GYfZ7t+NWlCIAiqt8W5TkABSqf5Ll6p8C8JFGeAyHKZTr64jAwIAfsGtijvAXQPkTZ3wHGcG101FwDAoVZmUtgb+U2FZEXwN5K3d4wXeFWonNmV3erayWdbwJ7KzW5AUSt/FwgZ0DSStGeA9+t3KwfAaXKPF+t5wH8gUfSJAuw4z9oI+Ef9AftHUrU4iV78QAAAABJRU5ErkJggg=="
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(2)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, ".aircraft {\n  background: url(" + __webpack_require__(1) + ") no-repeat 0 0;\n}\n.woody {\n  background: url(" + __webpack_require__(8) + ") no-repeat 0 0;\n}", ""]);
+	exports.push([module.id, "body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports) {
 
 	/*
@@ -141,13 +79,8 @@
 
 
 /***/ },
+/* 3 */,
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "images/aircraft-232e884c.png";
-
-/***/ },
-/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -399,23 +332,23 @@
 
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(1);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
+	var update = __webpack_require__(4)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./index.css", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./index.css");
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js?sourceMap=false!./../../../../../node_modules/postcss-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./style.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -424,18 +357,6 @@
 		module.hot.dispose(function() { update(); });
 	}
 
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "images/buzz-9407c5eb.jpg";
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "images/woody-7a477843.jpg";
-
 /***/ }
-/******/ ]);
-//# sourceMappingURL=index.js.map
+]);
+//# sourceMappingURL=inline-css.js.map

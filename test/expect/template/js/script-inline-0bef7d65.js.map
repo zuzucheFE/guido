@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/js/script-inline.js"],"names":["console","log"],"mappings":";;;;;;AAAAA,SAAQC,GAAR,CAAY,yBAAZ,E","file":"js/script-inline-0bef7d65.js","sourcesContent":["console.log('i am script-inline page');\n\n\n// WEBPACK FOOTER //\n// ./src/js/script-inline.js"],"sourceRoot":""}
