@@ -23,6 +23,7 @@ function testBuild(options, fixtureDir) {
         del.sync(outputDir);
 
         options.cwd = cwd;
+        options.quiet = true; // 不输出任何信息
 
         build(options, function (error) {
             if (error) {
