@@ -6,7 +6,7 @@ const path = require('path');
 
 let build = require('../lib/build');
 let options = {
-    cwd: path.join(__dirname, 'fixtures', 'css'),
+    cwd: path.join(__dirname, 'fixtures', 'sprites'),
     hash: false
 };
 
