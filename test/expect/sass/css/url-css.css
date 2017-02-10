@@ -1,2 +1,1 @@
-body{background:red;-webkit-transform:translateZ(0);transform:translateZ(0);box-sizing:border-box}body a{color:rgba(0,0,0,.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}
-/*# sourceMappingURL=url-css.css.map*/
+body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}

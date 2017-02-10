@@ -1,3 +1,3 @@
-import '../css/style.css?__inline';
+import '../css/style.css';
 
 console.log('css inline-css');

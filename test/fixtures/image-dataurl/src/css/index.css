@@ -1,6 +1,29 @@
 .aircraft {
   background: url(../images/aircraft.png) no-repeat 0 0;
 }
+.aircraft-inline {
+  background: url(../images/aircraft.png?__inline) no-repeat 0 0;
+}
+.aircraft-url {
+  background: url(../images/aircraft.png?__url) no-repeat 0 0;
+}
+
+.buzz {
+  background: url(../images/buzz.jpg) no-repeat 0 0;
+}
+.buzz-inline {
+  background: url(../images/buzz.jpg?__inline) no-repeat 0 0;
+}
+.buzz-url {
+  background: url(../images/buzz.jpg?__url) no-repeat 0 0;
+}
+
 .woody {
   background: url(../images/woody.jpg) no-repeat 0 0;
+}
+.woody-inline {
+  background: url(../images/woody.jpg?__inline) no-repeat 0 0;
+}
+.woody-url {
+  background: url(../images/woody.jpg?__url) no-repeat 0 0;
 }
