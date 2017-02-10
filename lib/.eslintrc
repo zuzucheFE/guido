@@ -6,7 +6,10 @@
   },
   "parserOptions": {
     "ecmaVersion": 6,
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "rules": {
     // 使用分号: 报错级别, 必须
@@ -37,5 +40,8 @@
 
     // 禁止使用eval()
     "no-eval": "error"
-  }
+  },
+  "plugins": [
+    "react"
+  ]
 }

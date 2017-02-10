@@ -22,6 +22,7 @@ function testBuild(options, fixtureDir) {
         process.chdir(cwd);
         del.sync(outputDir);
 
+        options.env = 'test';
         options.cwd = cwd;
         options.quiet = true; // 不输出任何信息
 
@@ -51,11 +52,20 @@ function testBuild(options, fixtureDir) {
 describe('Build', function() {
     this.timeout(50000);
 
+    it('css', function() {
+        return testBuild({}, 'css');
+    });
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
     });
-    it('css', function() {
-        return testBuild({}, 'css');
+    it('handlebars', function() {
+        return testBuild({}, 'handlebars');
+    });
+    it('image-dataurl', function() {
+        return testBuild({}, 'image-dataurl');
+    });
+    it('jsx', function() {
+        return testBuild({}, 'jsx');
     });
     it('sass', function() {
         return testBuild({}, 'sass');
@@ -71,12 +81,6 @@ describe('Build', function() {
     });
     it('sprites-split-retina', function() {
         return testBuild({}, 'sprites-split-retina');
-    });
-    it('handlebars', function() {
-        return testBuild({}, 'handlebars');
-    });
-    it('image-dataurl', function() {
-        return testBuild({}, 'image-dataurl');
     });
     it('template', function() {
         return testBuild({
