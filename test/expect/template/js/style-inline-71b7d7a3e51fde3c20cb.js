@@ -63,28 +63,29 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */,
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2);
+var content = __webpack_require__(3);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(4)(content, {});
+var update = __webpack_require__(5)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../../../node_modules/css-loader/index.js??ref--2-oneOf-7-1!./../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-7-2!./../../../../../node_modules/sass-loader/index.js!./style.scss", function() {
-			var newContent = require("!!./../../../../../node_modules/css-loader/index.js??ref--2-oneOf-7-1!./../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-7-2!./../../../../../node_modules/sass-loader/index.js!./style.scss");
+		module.hot.accept("!!./../../../../../node_modules/css-loader/index.js??ref--2-oneOf-7-1!./../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-7-2!./../../../../../node_modules/sass-loader/index.js!./style-inline.scss?__inline", function() {
+			var newContent = require("!!./../../../../../node_modules/css-loader/index.js??ref--2-oneOf-7-1!./../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-7-2!./../../../../../node_modules/sass-loader/index.js!./style-inline.scss?__inline");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -94,21 +95,21 @@ if(false) {
 }
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
 // module
-exports.push([module.i, "body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box{width:120px;height:400px}\n", ""]);
+exports.push([module.i, "body{font:400 14px/1.5 \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", tahoma, arial, Microsoft Yahei, \\5b8b\\4f53, sans-serif}.style-inline{width:1190px}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -164,7 +165,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*
@@ -416,15 +417,18 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 5 */
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(1);
+__webpack_require__(2);
 
-console.log('sass to css inline-css');
+console.log('i am style-inline page');
 
 /***/ })
 /******/ ]);

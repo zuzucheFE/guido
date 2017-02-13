@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>script-inline</title>
-</head>
-<body>
-
-<script>/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -86,6 +78,4 @@ console.log('i am script-inline page');
 
 /***/ })
 
-/******/ });</script>
-</body>
-</html>
+/******/ });

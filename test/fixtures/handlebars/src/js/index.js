@@ -1,6 +1,3 @@
-"use strict";
-
-
 import { mainTpl } from './main.handlebars';
 
 document.body.innerHTML = mainTpl({

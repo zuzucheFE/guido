@@ -3,3 +3,4 @@ node_modules
 npm-debug.log
 .idea
 test/fixtures/**/dist
+test/debug.js
