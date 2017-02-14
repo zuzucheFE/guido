@@ -1,3 +1,4 @@
+/*! template v1.0.0 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -83,9 +84,9 @@
 
 __webpack_require__(1);
 
-document.querySelector('.simple').innerHTML = 'i am simple page';
+document.querySelector('.simple').innerHTML = 'i am simple page!!';
 
-console.log('i am simple page');
+console.log('i am simple page!');
 
 /***/ })
 
