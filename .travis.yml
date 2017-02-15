@@ -6,7 +6,8 @@ node_js:
   - "6"
 
 os:
- - "osx"
+  - linux
+  - osx
 
 script:
  - npm run travis:test
