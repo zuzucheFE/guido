@@ -114,11 +114,11 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  box-sizing: border-box;\n}\n\n.page___1QItB {\n  width: 100%;\n  background: #fff;\n}", ""]);
+exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  box-sizing: border-box;\n}\n\n.page--1QItB {\n  width: 100%;\n  background: #fff;\n}", ""]);
 
 // exports
 exports.locals = {
-	"page": "page___1QItB"
+	"page": "page--1QItB"
 };
 
 /***/ }),

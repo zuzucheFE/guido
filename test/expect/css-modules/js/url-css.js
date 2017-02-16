@@ -83,7 +83,7 @@ module.exports = ReactDOM;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"page":"page___1QItB"};
+module.exports = {"page":"page--1QItB"};
 
 /***/ }),
 /* 3 */,
