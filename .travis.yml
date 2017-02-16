@@ -14,5 +14,6 @@ charset: utf8
 os:
   - osx
   - linux
+  - window
 
 script: npm run travis:test
