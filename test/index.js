@@ -55,6 +55,9 @@ describe('Build', function() {
     it('css', function() {
         return testBuild({}, 'css');
     });
+    it('css-modules', function() {
+        return testBuild({}, 'css-modules');
+    });
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
     });
@@ -67,8 +70,11 @@ describe('Build', function() {
     it('jsx', function() {
         return testBuild({}, 'jsx');
     });
-    it('sass', function() {
-        return testBuild({}, 'sass');
+    it('scss', function() {
+        return testBuild({}, 'scss');
+    });
+    it('scss-modules', function() {
+        return testBuild({}, 'scss-modules');
     });
     it('sprites', function() {
         return testBuild({}, 'sprites');
