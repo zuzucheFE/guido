@@ -1,5 +1,6 @@
 module.exports = {
     "entry": {
-        "index": "./src/js/index.jsx"
+        "inline-css": "./src/js/inline-css.jsx",
+        "url-css": "./src/js/url-css.jsx"
     }
 };
