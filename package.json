@@ -5,7 +5,7 @@
   "author": "kidney <kidneyleung@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kidney/guido"
+    "url": "https://github.com/kidney/guido.git"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
