@@ -1,3 +1,9 @@
+---
+order: 1
+title: 快速上手
+---
+
+
 在使用Guido之前，需了解[webpack2](https://webpack.js.org/)的使用，并已安装Node v4.3.x以上版本。
 
 
