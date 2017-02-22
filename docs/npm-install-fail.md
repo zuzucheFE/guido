@@ -1,5 +1,4 @@
 ---
-order: 1
 title: 安装 node-sass、phantomjs 失败的解决方案
 ---
 

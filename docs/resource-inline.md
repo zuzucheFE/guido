@@ -1,4 +1,8 @@
-## html文件中嵌入资源
+---
+title: 资源嵌入
+---
+
+### html文件中嵌入资源
 
 源码：
 ```html
@@ -9,3 +13,4 @@
 ```html
 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
 ```
+
