@@ -3,12 +3,13 @@
 const path = require('path');
 const fs = require('fs');
 
-const expect = require('expect');
+const chai = require('chai');
+const expect = chai.expect;
 const glob = require('glob');
 const del = require('del');
 const build = require('../lib/build');
 
-function readFileSync(s) {
+function readFile(s) {
     return fs.readFileSync(s, 'utf-8');
 }
 
@@ -37,12 +38,10 @@ function testBuild(options, fixtureDir) {
             });
 
             actualFiles.forEach(function (file) {
-                const outputFile = readFileSync(path.join(outputDir, file));
-                const expectFile = readFileSync(path.join(expectDir, file));
-
-                expect(outputFile).toEqual(expectFile);
+                const outputFile = readFile(path.join(outputDir, file));
+                const expectFile = readFile(path.join(expectDir, file));
+                expect(outputFile).to.equal(expectFile);
             });
-
             resolve();
         });
     });
@@ -50,7 +49,7 @@ function testBuild(options, fixtureDir) {
 
 
 describe('Build', function() {
-    this.timeout(50000);
+    this.timeout(10000);
 
     it('css', function() {
         return testBuild({}, 'css');
