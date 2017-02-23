@@ -1,6 +1,8 @@
-node_modules
+/test/fixtures/**/dist
+/test/debug.js
+/coverage
+/node_modules
+*.log
+.vscode
 .DS_Store
-npm-debug.log
 .idea
-test/fixtures/**/dist
-test/debug.js
