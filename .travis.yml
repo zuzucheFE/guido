@@ -9,7 +9,6 @@ branches:
 node_js:
   - "6"
 
-charset: utf8
 
 os:
   - osx
