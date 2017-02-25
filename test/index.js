@@ -51,6 +51,18 @@ function testBuild(options, fixtureDir) {
 describe('Build', function() {
     this.timeout(10000);
 
+    it('code-split', function() {
+        return testBuild({}, 'code-split');
+    });
+    it('code-splitted-css-bundle', function() {
+        return testBuild({}, 'code-splitted-css-bundle');
+    });
+    it('code-splitted-require.context', function() {
+        return testBuild({}, 'code-splitted-require.context');
+    });
+    it('code-splitted-require.context-amd', function() {
+        return testBuild({}, 'code-splitted-require.context-amd');
+    });
     it('css', function() {
         return testBuild({}, 'css');
     });
