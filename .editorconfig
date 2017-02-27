@@ -13,7 +13,7 @@ trim_trailing_whitespace = true
 [*.{css,scss,sass,json}]
 indent_size = 2
 
-[{package.json,.travis.yml}]
+[{package.json,.travis.yml,.eslintrc}]
 indent_size = 2
 
 [*.md]
