@@ -22,7 +22,7 @@ guido依赖着 `node-sass` `phantomjs-prebuilt `等组件，若安装缓慢报�
 
 ```shell
 mkdir guido-demo && cd guido-demo
-guido -i
+guido init
 ```
 
 运行完毕，会在所在目录创建`package.json` 和 `webpack.config.js`
@@ -39,8 +39,8 @@ guido -i
 
 启动本地服务，访问http://0.0.0.0:8080/ 查看效果
 
-```she
-guido -d
+```shell
+guido dev
 ```
 
 
@@ -50,6 +50,6 @@ guido -d
 默认构建到`dist`目录中，如需更改输出目录，请查看[配置文档]()。
 
 ```shell
-guido -b
+guido build
 ```
 
