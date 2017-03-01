@@ -19,6 +19,7 @@
   "engines": {
     "node": ">=4.3.0 <5.0.0 || >=5.10"
   },
+  "main": "lib/guido.js",
   "dependencies": {
     "autoprefixer": "^6.7.5",
     "babel-core": "^6.23.1",
