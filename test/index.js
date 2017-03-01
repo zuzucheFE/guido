@@ -93,6 +93,12 @@ describe('Build', function() {
     it('jsx', function() {
         return testBuild({}, 'jsx');
     });
+    it('require.context', function() {
+        return testBuild({}, 'require.context');
+    });
+    it('require.resolve', function() {
+        return testBuild({}, 'require.resolve');
+    });
     it('scss', function() {
         return testBuild({}, 'scss');
     });
