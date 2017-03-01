@@ -1,19 +1,26 @@
 {
+  "parser": "babel-eslint",
   "env": {
     "es6": true,
     "browser": true,
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 6,
     "sourceType": "module",
+    "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "rules": {
+    // 强制行的最大长度
+    "max-len": "off",
+
     // 使用分号: 报错级别, 必须
     "semi": ["error", "always"],
+
+    // 强制使用一致的缩进
+    "indent": ["warn", 4],
 
     // 禁止出现多行空行: 关闭
     "no-multiple-empty-lines": "off",
@@ -39,7 +46,22 @@
     }],
 
     // 禁止使用eval()
-    "no-eval": "error"
+    "no-eval": "error",
+
+
+    // react plugin
+    // ====================
+    "react/sort-comp": "off",
+    "react/prop-types": "off",
+    "react/jsx-first-prop-new-line": "off",
+    "react/no-multi-comp": "off",
+    "react/no-string-refs": "off",
+    "react/jsx-filename-extension": ["warn", {
+      "extensions": [".js", ".jsx", ".tsx", ".md"]
+    }],
+    "react/no-array-index-key": "off",
+    "react/no-find-dom-node": "off",
+    "react/require-extension": "off"
   },
   "plugins": [
     "react"
