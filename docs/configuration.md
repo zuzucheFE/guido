@@ -1,8 +1,17 @@
 ### 配置
 
+
 #### entry
 
 页面的入口文件
+
+```javascript
+module.exports = {
+    entry: {
+        index: './src/js/index.js'
+    }
+}
+```
 
 
 
@@ -99,28 +108,36 @@
 
 autoprefixer的浏览器兼容配置，详细规则[点这里](https://github.com/ai/browserslist)
 
+- Default: `'last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'`
+
+规则的测试地址，[点这里](http://browserl.ist/?q=last+2+versions%2C+Firefox+ESR%2C+%3E+1%25%2C+ie+%3E%3D+8%2C+iOS+%3E%3D+8%2C+Android+%3E%3D+4)
+
 
 
 示例：
 
 ```js
 // webpack.config.js
-{
-    'output': {
-        'publicPath': '//www.example.com/static/bundles/',
-    	'path': 'dist',
-    	'jsDir': 'js',
-    	'cssDir': 'css',
-    	'imageDir': 'images',
-    	'fontDir': 'font',
-    	'templateDir': 'html'
+module.exports = {
+    entry: {
+        index: './src/js/index.js'
+    },
+    output: {
+        publicPath: '//www.example.com/static/bundles/',
+    	path: 'dist',
+    	
+    	jsDir: 'js',
+    	cssDir: 'css',
+    	imageDir: 'images',
+    	fontDir: 'font',
+    	templateDir: 'html'
   	},
-  	'devServer': {
-    	'host': '0.0.0.0',
-    	'port': '8080'
+  	devServer: {
+    	host: '0.0.0.0',
+    	port: '8080'
   	},
     
-  	'browserslist': ['last 2 versions', 'ie >= 8', 'iOS >= 8', 'Android >= 4']
+  	browserslist: ['last 2 versions', 'ie >= 8', 'iOS >= 8', 'Android >= 4']
 }
 ```
 
