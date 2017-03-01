@@ -51,9 +51,6 @@ function testBuild(options, fixtureDir) {
 describe('Build', function() {
     this.timeout(10000);
 
-    it('code-split', function() {
-        return testBuild({}, 'code-split');
-    });
     it('code-splitted-css-bundle', function() {
         return testBuild({}, 'code-splitted-css-bundle');
     });
@@ -63,6 +60,18 @@ describe('Build', function() {
     it('code-splitted-require.context-amd', function() {
         return testBuild({}, 'code-splitted-require.context-amd');
     });
+    it('code-splitting', function() {
+        return testBuild({}, 'code-splitting');
+    });
+    it('code-splitting-harmony', function() {
+        return testBuild({}, 'code-splitting-harmony');
+    });
+    it('common-chunk-and-vendor-chunk', function() {
+        return testBuild({}, 'common-chunk-and-vendor-chunk');
+    });
+    it('commonjs', function() {
+        return testBuild({}, 'commonjs');
+    });
     it('css', function() {
         return testBuild({}, 'css');
     });
@@ -71,6 +80,9 @@ describe('Build', function() {
     });
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
+    });
+    it('extra-async-chunk', function() {
+        return testBuild({}, 'extra-async-chunk');
     });
     it('handlebars', function() {
         return testBuild({}, 'handlebars');
@@ -99,9 +111,13 @@ describe('Build', function() {
     it('sprites-split-retina', function() {
         return testBuild({}, 'sprites-split-retina');
     });
-    it('template', function() {
-        return testBuild({
-            hash: true
-        }, 'template');
+    it('template-image', function() {
+        return testBuild({}, 'template-image');
+    });
+    it('template-partial', function() {
+        return testBuild({}, 'template-partial');
+    });
+    it('template-render-data', function() {
+        return testBuild({}, 'template-render-data');
     });
 });

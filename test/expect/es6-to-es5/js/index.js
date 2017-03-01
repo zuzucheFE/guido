@@ -73,10 +73,8 @@
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = Say;
+exports.__esModule = true;
+exports['default'] = Say;
 function Say() {
     console.log('Hi');
 }
@@ -93,9 +91,9 @@ var _say = __webpack_require__(0);
 
 var _say2 = _interopRequireDefault(_say);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-(0, _say2.default)();
+(0, _say2['default'])();
 
 /***/ })
 /******/ ]);

@@ -447,19 +447,19 @@ var _styleModules = __webpack_require__(3);
 
 var _styleModules2 = _interopRequireDefault(_styleModules);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(
+(0, _reactDom.render)(_react2['default'].createElement(
     'div',
-    { className: _styleModules2.default.page },
-    _react2.default.createElement(
+    { className: _styleModules2['default'].page },
+    _react2['default'].createElement(
         'h1',
         null,
         'Hi'
     ),
-    _react2.default.createElement(
+    _react2['default'].createElement(
         'section',
-        { className: _styleModules2.default.box },
+        { className: _styleModules2['default'].box },
         'box'
     )
 ));
