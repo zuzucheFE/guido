@@ -61,3 +61,12 @@ guido dev
 guido build
 ```
 
+
+
+
+
+### 扩展阅读
+
+- [webpack2官方文档](https://webpack.js.org)
+- [webpack2中文文档](http://www.css88.com/doc/webpack2/)
+
