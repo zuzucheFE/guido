@@ -75,6 +75,9 @@ describe('Build', function() {
     it('css', function() {
         return testBuild({}, 'css');
     });
+    it('css-font-url', function() {
+        return testBuild({}, 'css-font-url');
+    });
     it('css-modules', function() {
         return testBuild({}, 'css-modules');
     });
