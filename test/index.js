@@ -120,6 +120,9 @@ describe('Build', function() {
     it('sprites-split-retina', function() {
         return testBuild({}, 'sprites-split-retina');
     });
+    it('template-css-inline', function() {
+        return testBuild({}, 'template-css-inline');
+    });
     it('template-image', function() {
         return testBuild({}, 'template-image');
     });
