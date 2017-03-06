@@ -1,0 +1,5 @@
+docs/
+test/
+node_modules/
+.*
+*.yml
