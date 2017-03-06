@@ -12,7 +12,7 @@ title: 快速上手
 npm install guido -g
 ```
 
-guido依赖着 `node-sass` `phantomjs-prebuilt `等组件，若安装缓慢报错，[点我](/npm-install-fail)。
+guido依赖着 `node-sass` `phantomjs-prebuilt `等组件，若安装缓慢报错，[点我](./npm-install-fail)。
 
 
 
@@ -55,7 +55,7 @@ guido dev
 
 ### 4. 构建和部署
 
-默认构建到`dist`目录中，如需更改输出目录，请查看[配置文档](/configuration)。
+默认构建到`dist`目录中，如需更改输出目录，请查看[配置文档](./configuration)。
 
 ```shell
 guido build
@@ -67,6 +67,6 @@ guido build
 
 ### 扩展阅读
 
-- [webpack2官方文档](https://webpack.js.org)
+- [webpack2官方文档](https://webpack.js.org/)
 - [webpack2中文文档](http://www.css88.com/doc/webpack2/)
 
