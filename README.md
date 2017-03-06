@@ -17,7 +17,10 @@ npm install guido -g
 guido -v
 ```
 
+
+
 ## 特性
+
 - [x] 模块化
 - [x] jsx转换
 - [x] ES6 to ES5
@@ -30,3 +33,12 @@ guido -v
 - [x] handlebars
 - [x] 资源文件dataurl
 
+
+
+
+## 使用文档
+
+- [快速开始](https://github.com/kidney/guido/blob/master/docs/get-started.md)
+- [配置](https://github.com/kidney/guido/blob/master/docs/configuration.md)
+- [CSS Sprite图片合并](https://github.com/kidney/guido/blob/master/docs/css-images-sprite.md)
+- [嵌入资源](https://github.com/kidney/guido/blob/master/docs/resource-inline.md)

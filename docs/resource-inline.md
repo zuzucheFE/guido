@@ -2,6 +2,27 @@
 title: 嵌入资源
 ---
 
+# 嵌入资源
+
+在一些特定场景，为了减少http请求数，需要把资源内容嵌入到js、css、html中，例如图片base64嵌入到css、js里，给资源加上 `?__inline` 参数来标记资源嵌入需求
+
+
+
+## 嵌入规则
+
+### js内
+
+- 引入 `css` 文件时，默认是inline模式
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
+
+### css内
+
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
+
+
+### html内
+- 引入 `js` 文件时，默认是外链模式，如加上 `?__inline` 参数会强制使用inline模式
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
 
 
 ## html文件中嵌入资源
