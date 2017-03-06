@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/kidney/guido.git"
   },
+  "keywords": [
+    "guido", "webpack", "framework", "tools"
+  ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
     "travis:test": "npm run cover",
