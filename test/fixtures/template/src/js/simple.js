@@ -1,4 +1,4 @@
-require('../css/simple.scss?__url');
+require('../css/simple.scss');
 
 document.querySelector('.simple').innerHTML = 'i am simple page!!';
 

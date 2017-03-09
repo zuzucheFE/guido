@@ -43,8 +43,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-6-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-6-2!./style2.css", function() {
-			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-6-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-6-2!./style2.css");
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-2-2!./style2.css?__inline", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-2-2!./style2.css?__inline");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

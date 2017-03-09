@@ -1,1 +1,1 @@
-require('../css/style2.css');
+require('../css/style2.css?__inline');

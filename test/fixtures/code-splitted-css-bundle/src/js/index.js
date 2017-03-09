@@ -1,2 +1,2 @@
-require('../css/style.css');
+require('../css/style.css?__inline');
 require(['./chunk']);

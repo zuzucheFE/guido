@@ -1,3 +1,3 @@
-require('../css/partial.scss?__url');
+require('../css/partial.scss');
 
 console.log('i am partial page');

@@ -1,3 +1,3 @@
-import '../css/index.scss?__url';
+import '../css/index.scss';
 
 console.log('sprites');

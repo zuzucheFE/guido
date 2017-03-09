@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import styles from '../css/style.modules.scss?__url';
+import styles from '../css/style.modules.scss';
 
 render(<div className={styles.page}>
     <h1>Hi</h1>

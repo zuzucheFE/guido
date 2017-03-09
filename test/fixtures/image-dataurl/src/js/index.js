@@ -1,6 +1,6 @@
 "use strict";
 
-require('../css/index.css?__url');
+require('../css/index.css');
 
 let fragment = document.createDocumentFragment();
 

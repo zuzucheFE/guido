@@ -1,3 +1,3 @@
-require('../css/style.css?__url');
+require('../css/style.css');
 
 console.log('css inline done.');

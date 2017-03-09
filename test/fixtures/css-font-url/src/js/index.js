@@ -1,3 +1,3 @@
-import '../css/index.css?__url';
+import '../css/index.css';
 
 console.log('css font url');

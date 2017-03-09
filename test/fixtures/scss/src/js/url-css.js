@@ -1,3 +1,3 @@
-import '../css/style.scss?__url';
+import '../css/style.scss';
 
 console.log('sass to css url-css');
