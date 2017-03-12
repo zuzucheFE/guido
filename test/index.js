@@ -14,7 +14,7 @@ function readFile(s) {
 }
 
 function testBuild(options, fixtureDir) {
-    return new Promise(function(resolve) {
+    return new Promise(function(resolve, reject) {
         const cwd = path.join(__dirname, 'fixtures', fixtureDir);
         const outputDir = path.join(cwd, 'dist');
 
@@ -29,7 +29,7 @@ function testBuild(options, fixtureDir) {
 
         build(options, function (error) {
             if (error) {
-                throw new Error(error);
+                reject(error);
             }
 
             const actualFiles = glob.sync('**/*', {
