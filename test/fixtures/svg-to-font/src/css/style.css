@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'font-awesome';
+  src: url('../svg/font-awesome/*.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../svg/icomoon/*.svg');
+  font-weight: normal;
+  font-style: normal;
+}
