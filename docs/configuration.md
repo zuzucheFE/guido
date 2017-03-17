@@ -140,4 +140,3 @@ module.exports = {
   	browserslist: ['last 2 versions', 'ie >= 8', 'iOS >= 8', 'Android >= 4']
 }
 ```
-

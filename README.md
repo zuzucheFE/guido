@@ -32,6 +32,8 @@ guido -v
 - [x] autoprefixer
 - [x] handlebars
 - [x] 资源文件dataurl
+- [x] svg to webfont
+- [x] 本地服务
 
 
 
