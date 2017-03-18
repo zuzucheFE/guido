@@ -114,6 +114,9 @@ describe('Build', function() {
     it('sprites-retina', function() {
         return testBuild({}, 'sprites-retina');
     });
+    it('svg-to-font', function() {
+        return testBuild({}, 'svg-to-font');
+    });
     it('sprites-split', function() {
         return testBuild({}, 'sprites-split');
     });

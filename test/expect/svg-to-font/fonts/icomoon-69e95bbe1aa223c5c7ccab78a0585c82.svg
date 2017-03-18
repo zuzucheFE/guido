@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="icomoon" horiz-adv-x="16">
+    <font-face font-family="icomoon"
+      units-per-em="16" ascent="16"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow-down-left"
+      unicode="&#xEA01;"
+      horiz-adv-x="16" d=" M11.5 0L7.5 4L16 12.5L12.5 16L4 7.5L0 11.5V0H11.5z" />
+    <glyph glyph-name="arrow-down-right"
+      unicode="&#xEA02;"
+      horiz-adv-x="16" d=" M16 11.5L12 7.5L3.5 16L0 12.5L8.5 4L4.5 0H16V11.5z" />
+    <glyph glyph-name="arrow-down"
+      unicode="&#xEA03;"
+      horiz-adv-x="16" d=" M8 0.5L15.5 8H11V16H5V8H0.5z" />
+    <glyph glyph-name="arrow-left"
+      unicode="&#xEA04;"
+      horiz-adv-x="16" d=" M0.5 8L8 0.5V5H16V11H8V15.5z" />
+    <glyph glyph-name="arrow-right"
+      unicode="&#xEA05;"
+      horiz-adv-x="16" d=" M15.5 8L8 15.5V11H0V5H8V0.5z" />
+    <glyph glyph-name="arrow-up-left"
+      unicode="&#xEA06;"
+      horiz-adv-x="16" d=" M0 4.5L4 8.5L12.5 0L16 3.5L7.5 12L11.5 16H0V4.5z" />
+    <glyph glyph-name="arrow-up-right"
+      unicode="&#xEA07;"
+      horiz-adv-x="16" d=" M4.5 16L8.5 12L0 3.5L3.5 0L12 8.5L16 4.5V16H4.5z" />
+    <glyph glyph-name="arrow-up"
+      unicode="&#xEA08;"
+      horiz-adv-x="16" d=" M8 15.5L0.5 8H5V0H11V8H15.5z" />
+  </font>
+</defs>
+</svg>
