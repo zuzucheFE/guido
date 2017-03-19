@@ -51,6 +51,11 @@ function testBuild(options, fixtureDir) {
 describe('Build', function() {
     this.timeout(10000);
 
+    it('chunkhash', function() {
+        return testBuild({
+            hash: true
+        }, 'chunkhash');
+    });
     it('code-splitted-css-bundle', function() {
         return testBuild({}, 'code-splitted-css-bundle');
     });
