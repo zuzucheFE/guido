@@ -81,6 +81,11 @@ describe('Build', function() {
     it('css-modules', function() {
         return testBuild({}, 'css-modules');
     });
+    it('development-env', function() {
+        return testBuild({
+            env: 'development'
+        }, 'development-env');
+    });
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
     });
