@@ -1,5 +1,6 @@
 docs/
 test/
+/coverage
 node_modules/
 .*
 *.yml
