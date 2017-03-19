@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
+    "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test/index.js -- -R spec",
     "travis:test": "npm run cover",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test/index.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
