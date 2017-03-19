@@ -23,7 +23,7 @@ function testBuild(options, fixtureDir) {
         process.chdir(cwd);
         del.sync(outputDir);
 
-        options.env = 'test';
+        options.env || (options.env = '');
         options.cwd = cwd;
         options.quiet = true; // 不输出任何信息
 
@@ -51,11 +51,6 @@ function testBuild(options, fixtureDir) {
 describe('Build', function() {
     this.timeout(10000);
 
-    it('chunkhash', function() {
-        return testBuild({
-            hash: true
-        }, 'chunkhash');
-    });
     it('code-splitted-css-bundle', function() {
         return testBuild({}, 'code-splitted-css-bundle');
     });
@@ -100,6 +95,11 @@ describe('Build', function() {
     });
     it('jsx', function() {
         return testBuild({}, 'jsx');
+    });
+    it('production-env', function() {
+        return testBuild({
+            env: 'production'
+        }, 'production-env');
     });
     it('require.context', function() {
         return testBuild({}, 'require.context');
