@@ -19,8 +19,9 @@ sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 
  如果npm的包都下载缓慢，可以加上这句：
 
+
 ```shell
 registry=https://registry.npm.taobao.org
 ```
 
-但是需要 `npm publish`的要删除这句，不然会会publish到淘宝源上。
+但是需要 `npm publish`的要删除这句，不然会publish到淘宝源上。
