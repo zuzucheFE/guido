@@ -1,28 +1,37 @@
 ---
-title: 嵌入资源
+title: 资源引用
 ---
 
-# 嵌入资源
+# 资源引用
 
 在一些特定场景，为了减少http请求数，需要把资源内容嵌入到js、css、html中，例如图片base64嵌入到css、js里，给资源加上 `?__inline` 参数来标记资源嵌入需求
 
 
 
-## 嵌入规则
+## 规则
 
 ### js内
 
-- 引入 `css` 文件时，默认是inline模式
-- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
+- 引入 `css` 文件时，默认是外链模式
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式
+  - 加上 `?__inline` 参数会强制使用inline模式
+  - 加上 `?__url` 参数会强制使用外链模式
+
 
 ### css内
 
-- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式
+  - 加上 `?__inline` 参数会强制使用inline模式
+  - 加上 `?__url` 参数会强制使用外链模式
 
 
 ### html内
 - 引入 `js` 文件时，默认是外链模式，如加上 `?__inline` 参数会强制使用inline模式
-- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式，如加上 `?__inline` 参数会强制使用inline模式
+- 引入 `png` `jpg` `jpeg` `gif` 文件时，文件体积 `< 8kb`  默认是inline模式
+  - 加上 `?__inline` 参数会强制使用inline模式
+  - 加上 `?__url` 参数会强制使用外链模式
+
+
 
 
 ## html文件中嵌入资源
@@ -135,8 +144,8 @@ document.body.appendChild(aircraft);
 源码：
 
 ```javascript
-import '../css/style.css'; // es6用法
-//require('../css/style.css'); // es5用法
+import '../css/style.css?__inline'; // es6用法
+//require('../css/style.css?__inline'); // es5用法
 ```
 
 编译后：
@@ -222,3 +231,4 @@ console.log('css inline-css');
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAsCAMAAAAUyMtVAAAAUVBMVEVHcEwZsf/8NgYjrf8ZsP8asP8asP8ZsP8ZsP8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8Zsf8asf8asP8asP8Zsf8Zsf/7Ngb7NQX8NQUasf+A7QW+AAAAGnRSTlMA+vwFsA4Z4ybwu6LJYNpuinhBN07RlU7gXkieiXIAAAGCSURBVEjHrZXbkoMgEESHBRFFRPGSrP//oYsScCB4q9p+SgmnnG5aAkxxeKRlWZpePAOspvvM4tV2wzPAquzMM2BlZkMfAVaVHOkjwDHFNdC0mCFMFYcAcXtm0U8RU+cOdZtAux2SgtBNNFyteQ4AFQgAruuISYrgABjdWMzlw1VNMIOLIKzWt36I2jstFIuYUITXqvWHSQjLjLKKi7AyP1bvbd241QanSROmpvAOAAxubYpzoSZkXfUUv8H6yREiZCa35xgAUTqDO1F03nrzMf1r9YKEKH2KqvSGld+irdQ+AG8RMfhTJ10RHVyJRubOYiWAy5CNSE4aA4GYfZ7t+NWlCIAiqt8W5TkABSqf5Ll6p8C8JFGeAyHKZTr64jAwIAfsGtijvAXQPkTZ3wHGcG101FwDAoVZmUtgb+U2FZEXwN5K3d4wXeFWonNmV3erayWdbwJ7KzW5AUSt/FwgZ0DSStGeA9+t3KwfAaXKPF+t5wH8gUfSJAuw4z9oI+Ef9AftHUrU4iV78QAAAABJRU5ErkJggg==) no-repeat 0 0;
 }
 ```
+

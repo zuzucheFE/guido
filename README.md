@@ -43,4 +43,4 @@ guido -v
 - [快速开始](https://github.com/kidney/guido/blob/master/docs/get-started.md)
 - [配置](https://github.com/kidney/guido/blob/master/docs/configuration.md)
 - [CSS Sprite图片合并](https://github.com/kidney/guido/blob/master/docs/css-images-sprite.md)
-- [嵌入资源](https://github.com/kidney/guido/blob/master/docs/resource-inline.md)
+- [资源引用](https://github.com/kidney/guido/blob/master/docs/resource-reference.md)

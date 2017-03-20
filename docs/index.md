@@ -15,7 +15,9 @@ title: Guido
 - [x] 公共代码抽离
 - [x] scss to css
 - [x] css modules
-- [x] 雪碧图合并、切割分组、retina支持
+- [x] 雪碧图合并、切割分组、retina
 - [x] autoprefixer
-- [x] handlebars语法
+- [x] handlebars
 - [x] 资源文件dataurl
+- [x] svg to webfont
+- [x] 本地服务
