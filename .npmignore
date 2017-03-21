@@ -1,7 +1,8 @@
 docs/
 test/
-/coverage
+coverage/
 node_modules/
-.*
 *.yml
+.gitignore
+.editorconfig
 .npmrc
