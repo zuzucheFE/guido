@@ -2,16 +2,19 @@
   "name": "guido",
   "version": "1.0.3",
   "description": "Static build tool, base on webpack2",
-  "author": "kidney <kidneyleung@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kidney/guido.git"
+    "url": "https://github.com/zuzucheFE/guido.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zuzucheFE/guido/issues"
   },
   "keywords": [
     "guido",
     "webpack",
     "framework",
-    "tools"
+    "tools",
+    "frontend"
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
