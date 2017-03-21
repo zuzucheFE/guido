@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Static build tool, base on webpack2",
   "author": "kidney <kidneyleung@gmail.com>",
   "repository": {
