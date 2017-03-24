@@ -13,7 +13,11 @@ function readFile(s) {
     return fs.readFileSync(s, 'utf-8');
 }
 
-function testBuild(options, fixtureDir) {
+function filterImageBase64(str) {
+    return str.replace(/data:image\/[a-zA-Z0-9=\+\/,;]+/g, '');
+}
+
+function testBuild(webpackConfig, fixtureDir, options = {}) {
     return new Promise(function(resolve, reject) {
         const cwd = path.join(__dirname, 'fixtures', fixtureDir);
         const outputDir = path.join(cwd, 'dist');
@@ -23,11 +27,11 @@ function testBuild(options, fixtureDir) {
         process.chdir(cwd);
         del.sync(outputDir);
 
-        options.env || (options.env = '');
-        options.cwd = cwd;
-        options.quiet = true; // 不输出任何信息
+        webpackConfig.env || (webpackConfig.env = '');
+        webpackConfig.cwd = cwd;
+        webpackConfig.quiet = true; // 不输出任何信息
 
-        build(options, function (error) {
+        build(webpackConfig, function (error) {
             if (error) {
                 reject(error);
             }
@@ -38,9 +42,15 @@ function testBuild(options, fixtureDir) {
             });
 
             actualFiles.forEach(function (file) {
-                const outputFile = readFile(path.join(outputDir, file));
-                const expectFile = readFile(path.join(expectDir, file));
-                expect(outputFile).to.equal(expectFile);
+                if ('.png|.jpeg|.jpg|.gif'.indexOf(path.extname(file)) === -1) {
+                    let outputFile = readFile(path.join(outputDir, file));
+                    let expectFile = readFile(path.join(expectDir, file));
+                    if (options.ignoreImageBase64) {
+                        outputFile = filterImageBase64(outputFile);
+                        expectFile = filterImageBase64(expectFile);
+                    }
+                    expect(outputFile).to.equal(expectFile);
+                }
             });
             resolve();
         });
@@ -52,7 +62,9 @@ describe('Build', function() {
     this.timeout(10000);
 
     it('code-splitted-css-bundle', function() {
-        return testBuild({}, 'code-splitted-css-bundle');
+        return testBuild({}, 'code-splitted-css-bundle', {
+            ignoreImageBase64: true
+        });
     });
     it('code-splitted-require.context', function() {
         return testBuild({}, 'code-splitted-require.context');
@@ -96,7 +108,9 @@ describe('Build', function() {
         return testBuild({}, 'handlebars');
     });
     it('image-dataurl', function() {
-        return testBuild({}, 'image-dataurl');
+        return testBuild({}, 'image-dataurl', {
+            ignoreImageBase64: true
+        });
     });
     it('jsx', function() {
         return testBuild({}, 'jsx');
@@ -137,7 +151,9 @@ describe('Build', function() {
         return testBuild({}, 'template-css-inline');
     });
     it('template-image', function() {
-        return testBuild({}, 'template-image');
+        return testBuild({}, 'template-image', {
+            ignoreImageBase64: true
+        });
     });
     it('template-partial', function() {
         return testBuild({}, 'template-partial');
