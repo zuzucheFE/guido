@@ -42,10 +42,11 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
             });
 
             actualFiles.forEach(function (file) {
+                // 图片不作检查
                 if ('.png|.jpeg|.jpg|.gif'.indexOf(path.extname(file)) === -1) {
                     let outputFile = readFile(path.join(outputDir, file));
                     let expectFile = readFile(path.join(expectDir, file));
-                    if (options.ignoreImageBase64) {
+                    if (options.ignoreImageBase64) { // 内联图片不作检查
                         outputFile = filterImageBase64(outputFile);
                         expectFile = filterImageBase64(expectFile);
                     }
