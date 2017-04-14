@@ -25,7 +25,7 @@ mkdir guido-demo && cd guido-demo
 guido init
 ```
 
-运行完毕，会在所在目录创建`package.json` 和 `webpack.config.js`
+运行完毕，会在所在目录创建 `package.json` `webpack.config.js` `.eslintrc`
 
 ```shell
 └─┬ guido-demo/
@@ -37,8 +37,9 @@ guido init
   │ │ └── index.html
   │ └─┬ js/
   │   └── index.scss
+  ├── .eslintrc
   ├── package.json
-  ├── webpack.config.js
+  └── webpack.config.js
 ```
 
 
@@ -48,7 +49,7 @@ guido init
 启动本地服务，访问http://0.0.0.0:8080/ 查看效果
 
 ```shell
-guido dev
+guido server
 ```
 
 
