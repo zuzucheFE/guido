@@ -2,10 +2,6 @@ sudo: false
 
 language: node_js
 
-cache:
-  directories:
-    - $HOME/.npm
-
 branches:
   only:
     - master
