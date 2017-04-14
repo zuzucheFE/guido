@@ -16,5 +16,6 @@ node_js:
 
 os:
   - osx
+  - linux
 
 script: npm run travis:test
