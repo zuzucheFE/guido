@@ -94,11 +94,10 @@ module.exports = {
 - Default: `8080`
 - Required: `false`
 
-##### historyApiFallback
+##### setup
 
-> rewrites路由指向
+> Express app实例，你可以在此进行路由扩展等自动以规则
 
-- Default: `null`
 - Required: `false`
 
 
@@ -108,9 +107,9 @@ module.exports = {
 
 autoprefixer的浏览器兼容配置，详细规则[点这里](https://github.com/ai/browserslist)
 
-- Default: `'last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'`
+- Default: `['Chrome >= 45', 'last 2 Firefox versions', 'ie >= 9', 'Edge >= 12', 'iOS >= 9', 'Android >= 4', 'last 2 ChromeAndroid versions']`
 
-规则的测试地址，[点这里](http://browserl.ist/?q=last+2+versions%2C+Firefox+ESR%2C+%3E+1%25%2C+ie+%3E%3D+8%2C+iOS+%3E%3D+8%2C+Android+%3E%3D+4)
+规则的测试地址，[点这里](http://browserl.ist/?q=Chrome+%3E%3D+45%2C+last+2+Firefox+versions%2C+ie+%3E%3D+9%2C+Edge+%3E%3D+12%2C+iOS+%3E%3D+9%2C+Android+%3E%3D+4%2C+last+2+ChromeAndroid+versions)
 
 
 
@@ -134,9 +133,14 @@ module.exports = {
   	},
   	devServer: {
     	host: '0.0.0.0',
-    	port: '8080'
+    	port: '8080',
+        setup(app){
+            app.get('/some/path', function(req, res) {
+                res.json({ custom: 'response' });
+            });
+        }
   	},
     
-  	browserslist: ['last 2 versions', 'ie >= 8', 'iOS >= 8', 'Android >= 4']
+  	browserslist: ['last 2 versions', 'ie >= 10', 'iOS >= 9', 'Android >= 4']
 }
 ```
