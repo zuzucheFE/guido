@@ -1,40 +1,27 @@
-webpackJsonp([0],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+webpackJsonp([0],{
+
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-__webpack_require__(8);
-
-/***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)();
+exports = module.exports = __webpack_require__(1)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".xyz {\n  background: url(" + __webpack_require__(9) + ");\n}\n", ""]);
+exports.push([module.i, ".xyz {\n  background: url(" + __webpack_require__(15) + ");\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 8 */
+
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -43,8 +30,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-2-2!./style2.css?__inline", function() {
-			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--2-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--2-oneOf-2-2!./style2.css?__inline");
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-2-2!./style2.css?__inline", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-2-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-2-2!./style2.css?__inline");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -54,10 +41,22 @@ if(false) {
 }
 
 /***/ }),
-/* 9 */
+
+/***/ 15:
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX///+nxBvIAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII="
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(14);
 
 /***/ })
-]);
+
+});

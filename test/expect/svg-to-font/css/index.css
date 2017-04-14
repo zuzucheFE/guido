@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-awesome';
-  src: url(fonts/font-awesome-e1bff014b5d7770b5dc6b1d7e6967b30.eot);
-  src: url(fonts/font-awesome-e1bff014b5d7770b5dc6b1d7e6967b30.eot#iefix) format('embedded-opentype'), 
-       url(fonts/font-awesome-715ee0a3a95ed027df45a19e53f72a21.woff2) format('woff2'), 
-       url(fonts/font-awesome-124737e96cd0f4b4f086d74bfa6a713a.woff) format('woff'), 
-       url(fonts/font-awesome-b19cdf918ff1152580fe49da72e72da4.svg#font-awesome) format('svg');
+  src: url(fonts/font-awesome.eot);
+  src: url(fonts/font-awesome.eot#iefix) format('embedded-opentype'), 
+       url(fonts/font-awesome.woff2) format('woff2'), 
+       url(fonts/font-awesome.woff) format('woff'), 
+       url(fonts/font-awesome.svg#font-awesome) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -48,11 +48,11 @@
 }
 @font-face {
   font-family: 'icomoon';
-  src: url(fonts/icomoon-33b5c227a04ecf00094cc09f9ad24d7c.eot);
-  src: url(fonts/icomoon-33b5c227a04ecf00094cc09f9ad24d7c.eot#iefix) format('embedded-opentype'), 
-       url(fonts/icomoon-1c5856d4e2b08b3ee8ccdb98aa362c90.woff2) format('woff2'), 
-       url(fonts/icomoon-48660ae87d3856e323e321bfcd860fc1.woff) format('woff'), 
-       url(fonts/icomoon-69e95bbe1aa223c5c7ccab78a0585c82.svg#icomoon) format('svg');
+  src: url(fonts/icomoon.eot);
+  src: url(fonts/icomoon.eot#iefix) format('embedded-opentype'), 
+       url(fonts/icomoon.woff2) format('woff2'), 
+       url(fonts/icomoon.woff) format('woff'), 
+       url(fonts/icomoon.svg#icomoon) format('svg');
   font-weight: normal;
   font-style: normal;
 }

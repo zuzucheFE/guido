@@ -60,10 +60,17 @@
 /******/ 		if(installedChunks[chunkId] === 0)
 /******/ 			return Promise.resolve();
 /******/
-/******/ 		// an Promise means "currently loading".
+/******/ 		// a Promise means "currently loading".
 /******/ 		if(installedChunks[chunkId]) {
 /******/ 			return installedChunks[chunkId][2];
 /******/ 		}
+/******/
+/******/ 		// setup Promise in chunk cache
+/******/ 		var promise = new Promise(function(resolve, reject) {
+/******/ 			installedChunks[chunkId] = [resolve, reject];
+/******/ 		});
+/******/ 		installedChunks[chunkId][2] = promise;
+/******/
 /******/ 		// start chunk loading
 /******/ 		var head = document.getElementsByTagName('head')[0];
 /******/ 		var script = document.createElement('script');
@@ -88,13 +95,8 @@
 /******/ 				installedChunks[chunkId] = undefined;
 /******/ 			}
 /******/ 		};
-/******/
-/******/ 		var promise = new Promise(function(resolve, reject) {
-/******/ 			installedChunks[chunkId] = [resolve, reject];
-/******/ 		});
-/******/ 		installedChunks[chunkId][2] = promise;
-/******/
 /******/ 		head.appendChild(script);
+/******/
 /******/ 		return promise;
 /******/ 	};
 /******/
@@ -137,12 +139,11 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -150,7 +151,7 @@
 
 function getTemplate(templateName, callback) {
     __webpack_require__.e/* require.ensure */(0).then((function (require) {
-        callback(__webpack_require__(0)("./" + templateName)());
+        callback(__webpack_require__(1)("./" + templateName)());
     }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 }
 getTemplate('a', function (a) {

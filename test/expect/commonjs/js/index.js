@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,13 +73,24 @@
 "use strict";
 
 
-var add = __webpack_require__(1).add;
+var add = __webpack_require__(2).add;
 exports.increment = function (val) {
     return add(val, 1);
 };
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var inc = __webpack_require__(0).increment;
+var a = 1;
+inc(a); // 2
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95,17 +106,6 @@ exports.add = function () {
     }
     return sum;
 };
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var inc = __webpack_require__(0).increment;
-var a = 1;
-inc(a); // 2
 
 /***/ })
 /******/ ]);

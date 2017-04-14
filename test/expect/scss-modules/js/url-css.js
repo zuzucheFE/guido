@@ -63,20 +63,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = React;
+module.exports = window.React;
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = ReactDOM;
+module.exports = window.ReactDOM;
 
 /***/ }),
 /* 2 */
@@ -88,10 +88,7 @@ module.exports = {"box":"box--1Nnve","page":"page--30Pd1"};
 /***/ }),
 /* 3 */,
 /* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -107,19 +104,19 @@ var _styleModules = __webpack_require__(2);
 
 var _styleModules2 = _interopRequireDefault(_styleModules);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2['default'].createElement(
+(0, _reactDom.render)(_react2.default.createElement(
     'div',
-    { className: _styleModules2['default'].page },
-    _react2['default'].createElement(
+    { className: _styleModules2.default.page },
+    _react2.default.createElement(
         'h1',
         null,
         'Hi'
     ),
-    _react2['default'].createElement(
+    _react2.default.createElement(
         'section',
-        { className: _styleModules2['default'].box },
+        { className: _styleModules2.default.box },
         'box'
     )
 ));

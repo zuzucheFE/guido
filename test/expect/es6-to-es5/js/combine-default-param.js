@@ -63,37 +63,50 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 51);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.__esModule = true;
-exports['default'] = Say;
-function Say() {
-    console.log('Hi');
+Object.defineProperty(exports, "__esModule", {
+                                                value: true
+});
+exports.default = combineDefaultParam;
+function combineDefaultParam() {
+                                                var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+                                                    _ref$bar = _ref.bar,
+                                                    bar = _ref$bar === undefined ? 'no' : _ref$bar,
+                                                    _ref$baz = _ref.baz,
+                                                    baz = _ref$baz === undefined ? 'works!' : _ref$baz;
+
+                                                return bar + ', ' + baz;
 }
 module.exports = exports['default'];
 
 /***/ }),
-/* 1 */
+
+/***/ 51:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _say = __webpack_require__(0);
+var _combineDefaultParam = __webpack_require__(45);
 
-var _say2 = _interopRequireDefault(_say);
+var _combineDefaultParam2 = _interopRequireDefault(_combineDefaultParam);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _say2['default'])();
+alert((0, _combineDefaultParam2.default)({
+    bar: 'yay'
+}));
 
 /***/ })
-/******/ ]);
+
+/******/ });

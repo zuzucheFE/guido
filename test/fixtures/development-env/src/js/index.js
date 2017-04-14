@@ -3,4 +3,4 @@ import Say from './say';
 
 Say();
 
-console.log('production-env');
+console.log('development-env');
