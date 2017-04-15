@@ -13,8 +13,5 @@ os:
   - osx
   - linux
 
-before_script:
- - npm install varstream svgicons2svgfont node-gyp ttf2woff2 -g
-
 script: npm run travis:test
 
