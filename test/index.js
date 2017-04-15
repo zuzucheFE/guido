@@ -15,7 +15,7 @@ function readFile(s) {
 
 function filterBase64(str) {
     return str
-        .replace(/data:image\/[a-zA-Z0-9=\+\/,;]+/g, '')
+        .replace(/data:image\/[a-zA-Z0-9=\+\/,;]+/g, '') // 内联图片不作检查
         .replace(/data:application\/json;charset=utf-8;base64,[a-zA-Z0-9=\+\/,;]+/g, '');
 }
 
@@ -48,10 +48,8 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
                 if ('.png|.jpeg|.jpg|.gif'.indexOf(path.extname(file)) === -1) {
                     let outputFile = readFile(path.join(outputDir, file));
                     let expectFile = readFile(path.join(expectDir, file));
-                    if (options.ignoreImageBase64) { // 内联图片不作检查
-                        outputFile = filterBase64(outputFile);
-                        expectFile = filterBase64(expectFile);
-                    }
+                    outputFile = filterBase64(outputFile);
+                    expectFile = filterBase64(expectFile);
                     expect(outputFile).to.equal(expectFile);
                 }
             });
@@ -65,9 +63,7 @@ describe('Build', function() {
     this.timeout(10000);
 
     it('code-splitted-css-bundle', function() {
-        return testBuild({}, 'code-splitted-css-bundle', {
-            ignoreImageBase64: true
-        });
+        return testBuild({}, 'code-splitted-css-bundle');
     });
     it('code-splitted-require.context', function() {
         return testBuild({}, 'code-splitted-require.context');
@@ -154,9 +150,7 @@ describe('Build', function() {
         return testBuild({}, 'template-css-inline');
     });
     it('template-image', function() {
-        return testBuild({}, 'template-image', {
-            ignoreImageBase64: true
-        });
+        return testBuild({}, 'template-image');
     });
     it('template-partial', function() {
         return testBuild({}, 'template-partial');
