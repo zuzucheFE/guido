@@ -13,8 +13,10 @@ function readFile(s) {
     return fs.readFileSync(s, 'utf8');
 }
 
-function filterImageBase64(str) {
-    return str.replace(/data:image\/[a-zA-Z0-9=\+\/,;]+/g, '');
+function filterBase64(str) {
+    return str
+        .replace(/data:image\/[a-zA-Z0-9=\+\/,;]+/g, '')
+        .replace(/data:application\/json;charset=utf-8;base64,[a-zA-Z0-9=\+\/,;]+/g, '');
 }
 
 function testBuild(webpackConfig, fixtureDir, options = {}) {
@@ -47,8 +49,8 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
                     let outputFile = readFile(path.join(outputDir, file));
                     let expectFile = readFile(path.join(expectDir, file));
                     if (options.ignoreImageBase64) { // 内联图片不作检查
-                        outputFile = filterImageBase64(outputFile);
-                        expectFile = filterImageBase64(expectFile);
+                        outputFile = filterBase64(outputFile);
+                        expectFile = filterBase64(expectFile);
                     }
                     expect(outputFile).to.equal(expectFile);
                 }
