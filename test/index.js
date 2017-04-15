@@ -67,7 +67,7 @@ describe('Build', function() {
             ignoreImageBase64: true
         });
     });
-    it('code-splitted-require.context', function() {
+    /*it('code-splitted-require.context', function() {
         return testBuild({}, 'code-splitted-require.context');
     });
     it('code-splitted-require.context-amd', function() {
@@ -161,5 +161,5 @@ describe('Build', function() {
     });
     it('template-render-data', function() {
         return testBuild({}, 'template-render-data');
-    });
+    });*/
 });
