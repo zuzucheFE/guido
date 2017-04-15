@@ -10,7 +10,7 @@ const del = require('del');
 const build = require('../lib/build');
 
 function readFile(s) {
-    return fs.readFileSync(s, 'utf-8');
+    return fs.readFileSync(s, 'utf8');
 }
 
 function filterImageBase64(str) {
