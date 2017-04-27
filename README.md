@@ -45,3 +45,6 @@ guido -v
 - [CSS Sprite图片合并](https://github.com/zuzucheFE/guido/blob/master/docs/css-images-sprite.md)
 - [资源引用](https://github.com/zuzucheFE/guido/blob/master/docs/resource-reference.md)
 - [本地开发](https://github.com/zuzucheFE/guido/blob/master/docs/dev-server.md)
+
+
+[![Guido Logo](https://cldup.com/VRIcicgf5s.jpg)](https://github.com/zuzucheFE/guido)
