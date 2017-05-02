@@ -149,6 +149,9 @@ describe('Build', function() {
     it('template-css-inline', function() {
         return testBuild({}, 'template-css-inline');
     });
+    it('template-helper', function() {
+        return testBuild({}, 'template-helper');
+    });
     it('template-image', function() {
         return testBuild({}, 'template-image');
     });
