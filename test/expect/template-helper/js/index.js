@@ -75,12 +75,12 @@ var Handlebars = __webpack_require__(2);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     return "    <div>"
-    + container.escapeExpression((helpers.toUpperCase || (depth0 && depth0.toUpperCase) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"toUpperCase","hash":{},"data":data}))
+    + container.escapeExpression((helpers.toUpperCase || (depth0 && depth0.toUpperCase) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.name : depth0),{"name":"toUpperCase","hash":{},"data":data}))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.list : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.list : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 /***/ }),
@@ -113,59 +113,7 @@ console.log('template-helper done.');
 /**!
 
  @license
- handlebars v4.0.6
-
-Copyright (C) 2011-2016 by Yehuda Katz
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-/**!
-
- @license
- handlebars v4.0.6
-
-Copyright (C) 2011-2016 by Yehuda Katz
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-/**!
-
- @license
- handlebars v4.0.6
+ handlebars v4.0.7
 
 Copyright (C) 2011-2016 by Yehuda Katz
 
@@ -242,7 +190,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -275,7 +223,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var runtime = _interopRequireWildcard(_handlebarsRuntime);
 
-	var _handlebarsNoConflict = __webpack_require__(22);
+	var _handlebarsNoConflict = __webpack_require__(33);
 
 	var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 
@@ -307,9 +255,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = inst;
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -332,9 +280,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -346,9 +294,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -371,7 +319,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _logger2 = _interopRequireDefault(_logger);
 
-	var VERSION = '4.0.5';
+	var VERSION = '4.0.7';
 	exports.VERSION = VERSION;
 	var COMPILER_REVISION = 7;
 
@@ -453,9 +401,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.createFrame = _utils.createFrame;
 	exports.logger = _logger2['default'];
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -581,9 +529,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return (contextPath ? contextPath + '.' : '') + id;
 	}
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -623,7 +571,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      // Work around issue under safari where we can't directly set the column value
 	      /* istanbul ignore next */
 	      if (_Object$defineProperty) {
-	        Object.defineProperty(this, 'column', { value: column });
+	        Object.defineProperty(this, 'column', {
+	          value: column,
+	          enumerable: true
+	        });
 	      } else {
 	        this.column = column;
 	      }
@@ -638,24 +589,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = Exception;
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(7), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(8);
 	module.exports = function defineProperty(it, key, desc){
 	  return $.setDesc(it, key, desc);
 	};
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var $Object = Object;
 	module.exports = {
@@ -671,9 +622,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  each:       [].forEach
 	};
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -720,9 +671,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _helpersWith2['default'](instance);
 	}
 
-/***/ },
+/***/ }),
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -763,9 +714,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -860,9 +811,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -888,9 +839,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -921,9 +872,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 14 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -951,9 +902,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 15 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -967,9 +918,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 16 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -1004,9 +955,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 17 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -1023,9 +974,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _decoratorsInline2['default'](instance);
 	}
 
-/***/ },
+/***/ }),
 /* 18 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -1056,9 +1007,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 19 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -1107,9 +1058,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = logger;
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 20 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// Build out our basic SafeString type
 	'use strict';
@@ -1126,11 +1077,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = SafeString;
 	module.exports = exports['default'];
 
-/***/ },
+/***/ }),
 /* 21 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
+
+	var _Object$seal = __webpack_require__(22)['default'];
 
 	var _interopRequireWildcard = __webpack_require__(1)['default'];
 
@@ -1274,6 +1227,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      return obj;
 	    },
+	    // An empty object to use as replacement for null-contexts
+	    nullContext: _Object$seal({}),
 
 	    noop: env.VM.noop,
 	    compilerInfo: templateSpec.compiler
@@ -1341,7 +1296,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
 	    var currentDepths = depths;
-	    if (depths && context != depths[0]) {
+	    if (depths && context != depths[0] && !(context === container.nullContext && depths[0] === null)) {
 	      currentDepths = [context].concat(depths);
 	    }
 
@@ -1359,12 +1314,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function resolvePartial(partial, context, options) {
 	  if (!partial) {
 	    if (options.name === '@partial-block') {
-	      var data = options.data;
-	      while (data['partial-block'] === noop) {
-	        data = data._parent;
-	      }
-	      partial = data['partial-block'];
-	      data['partial-block'] = noop;
+	      partial = options.data['partial-block'];
 	    } else {
 	      partial = options.partials[options.name];
 	    }
@@ -1377,6 +1327,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	function invokePartial(partial, context, options) {
+	  // Use the current closure context to save the partial-block if this partial
+	  var currentPartialBlock = options.data && options.data['partial-block'];
 	  options.partial = true;
 	  if (options.ids) {
 	    options.data.contextPath = options.ids[0] || options.data.contextPath;
@@ -1384,12 +1336,21 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  var partialBlock = undefined;
 	  if (options.fn && options.fn !== noop) {
-	    options.data = _base.createFrame(options.data);
-	    partialBlock = options.data['partial-block'] = options.fn;
-
-	    if (partialBlock.partials) {
-	      options.partials = Utils.extend({}, options.partials, partialBlock.partials);
-	    }
+	    (function () {
+	      options.data = _base.createFrame(options.data);
+	      // Wrapper function to get access to currentPartialBlock from the closure
+	      var fn = options.fn;
+	      partialBlock = options.data['partial-block'] = function partialBlockWrapper(context, options) {
+	        // Restore the partial-block from the closure for the execution of the block
+	        // i.e. the part inside the block of the partial call.
+	        options.data = _base.createFrame(options.data);
+	        options.data['partial-block'] = currentPartialBlock;
+	        return fn(context, options);
+	      };
+	      if (fn.partials) {
+	        options.partials = Utils.extend({}, options.partials, fn.partials);
+	      }
+	    })();
 	  }
 
 	  if (partial === undefined && partialBlock) {
@@ -1424,9 +1385,171 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return prog;
 	}
 
-/***/ },
+/***/ }),
 /* 22 */
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(23), __esModule: true };
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(24);
+	module.exports = __webpack_require__(29).Object.seal;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// 19.1.2.17 Object.seal(O)
+	var isObject = __webpack_require__(25);
+
+	__webpack_require__(26)('seal', function($seal){
+	  return function seal(it){
+	    return $seal && isObject(it) ? $seal(it) : it;
+	  };
+	});
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
+
+	module.exports = function(it){
+	  return typeof it === 'object' ? it !== null : typeof it === 'function';
+	};
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// most Object methods by ES6 should accept primitives
+	var $export = __webpack_require__(27)
+	  , core    = __webpack_require__(29)
+	  , fails   = __webpack_require__(32);
+	module.exports = function(KEY, exec){
+	  var fn  = (core.Object || {})[KEY] || Object[KEY]
+	    , exp = {};
+	  exp[KEY] = exec(fn);
+	  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
+	};
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var global    = __webpack_require__(28)
+	  , core      = __webpack_require__(29)
+	  , ctx       = __webpack_require__(30)
+	  , PROTOTYPE = 'prototype';
+
+	var $export = function(type, name, source){
+	  var IS_FORCED = type & $export.F
+	    , IS_GLOBAL = type & $export.G
+	    , IS_STATIC = type & $export.S
+	    , IS_PROTO  = type & $export.P
+	    , IS_BIND   = type & $export.B
+	    , IS_WRAP   = type & $export.W
+	    , exports   = IS_GLOBAL ? core : core[name] || (core[name] = {})
+	    , target    = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE]
+	    , key, own, out;
+	  if(IS_GLOBAL)source = name;
+	  for(key in source){
+	    // contains in native
+	    own = !IS_FORCED && target && key in target;
+	    if(own && key in exports)continue;
+	    // export native or passed
+	    out = own ? target[key] : source[key];
+	    // prevent global pollution for namespaces
+	    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
+	    // bind timers to global for call from export context
+	    : IS_BIND && own ? ctx(out, global)
+	    // wrap global constructors for prevent change them in library
+	    : IS_WRAP && target[key] == out ? (function(C){
+	      var F = function(param){
+	        return this instanceof C ? new C(param) : C(param);
+	      };
+	      F[PROTOTYPE] = C[PROTOTYPE];
+	      return F;
+	    // make static versions for prototype methods
+	    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
+	    if(IS_PROTO)(exports[PROTOTYPE] || (exports[PROTOTYPE] = {}))[key] = out;
+	  }
+	};
+	// type bitmap
+	$export.F = 1;  // forced
+	$export.G = 2;  // global
+	$export.S = 4;  // static
+	$export.P = 8;  // proto
+	$export.B = 16; // bind
+	$export.W = 32; // wrap
+	module.exports = $export;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
+
+	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+	var global = module.exports = typeof window != 'undefined' && window.Math == Math
+	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+	var core = module.exports = {version: '1.2.6'};
+	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// optional / simple context binding
+	var aFunction = __webpack_require__(31);
+	module.exports = function(fn, that, length){
+	  aFunction(fn);
+	  if(that === undefined)return fn;
+	  switch(length){
+	    case 1: return function(a){
+	      return fn.call(that, a);
+	    };
+	    case 2: return function(a, b){
+	      return fn.call(that, a, b);
+	    };
+	    case 3: return function(a, b, c){
+	      return fn.call(that, a, b, c);
+	    };
+	  }
+	  return function(/* ...args */){
+	    return fn.apply(that, arguments);
+	  };
+	};
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+	module.exports = function(it){
+	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
+	  return it;
+	};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+	module.exports = function(exec){
+	  try {
+	    return !!exec();
+	  } catch(e){
+	    return true;
+	  }
+	};
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/* global window */
 	'use strict';
@@ -1449,7 +1572,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
