@@ -106,6 +106,9 @@ describe('Build', function() {
     it('handlebars', function() {
         return testBuild({}, 'handlebars');
     });
+    it('harmony-unused', function() {
+        return testBuild({}, 'harmony-unused');
+    });
     it('image-dataurl', function() {
         return testBuild({}, 'image-dataurl', {
             ignoreImageBase64: true

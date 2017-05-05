@@ -1,6 +1,7 @@
+import $ from 'jquery';
 import { mainTpl } from './main.handlebars';
 
-document.body.innerHTML = mainTpl({
+$(document.body).innerHTML = mainTpl({
     data: [{
         name: 'Eddard'
     }, {
