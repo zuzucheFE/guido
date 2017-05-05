@@ -1,10 +1,7 @@
 webpackJsonp([1],{
 
 /***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ (function(module, exports) {
 
 module.exports = 'd';
 

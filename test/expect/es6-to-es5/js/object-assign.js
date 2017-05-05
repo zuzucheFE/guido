@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 52);
+/******/ 	return __webpack_require__(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -520,82 +520,70 @@ exports.f = {}.propertyIsEnumerable;
 /* 43 */,
 /* 44 */,
 /* 45 */,
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _assign = __webpack_require__(54);
-
-var _assign2 = _interopRequireDefault(_assign);
-
-exports.default = objectMerge;
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function objectMerge(obj1, obj2) {
-    return (0, _assign2.default)(obj1, obj2);
-}
-module.exports = exports["default"];
-
-/***/ }),
+/* 46 */,
 /* 47 */,
 /* 48 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(60), __esModule: true };
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony export (immutable) */ __webpack_exports__["a"] = objectMerge;
+
+function objectMerge(obj1, obj2) {
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default()(obj1, obj2);
+}
 
 /***/ }),
 /* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = { "default": __webpack_require__(64), __esModule: true };
+
+/***/ }),
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object_assign__ = __webpack_require__(48);
 
 
-var _stringify = __webpack_require__(48);
-
-var _stringify2 = _interopRequireDefault(_stringify);
-
-var _objectAssign = __webpack_require__(46);
-
-var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var a = { code: 0 };
 var b = { msg: 'wow!' };
 
-alert((0, _stringify2.default)(a));
-alert((0, _stringify2.default)(b));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(a));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(b));
 
-var c = (0, _objectAssign2.default)(a, b);
+var c = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__object_assign__["a" /* default */])(a, b);
 
-alert((0, _stringify2.default)(a));
-alert((0, _stringify2.default)(b));
-alert((0, _stringify2.default)(c));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(a));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(b));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(c));
 
 /***/ }),
-/* 53 */,
-/* 54 */
+/* 57 */,
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(61), __esModule: true };
+module.exports = { "default": __webpack_require__(65), __esModule: true };
 
 /***/ }),
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
 /* 59 */,
-/* 60 */
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var core  = __webpack_require__(1)
@@ -605,17 +593,13 @@ module.exports = function stringify(it){ // eslint-disable-line no-unused-vars
 };
 
 /***/ }),
-/* 61 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(89);
+__webpack_require__(93);
 module.exports = __webpack_require__(1).Object.assign;
 
 /***/ }),
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
 /* 66 */,
 /* 67 */,
 /* 68 */,
@@ -627,14 +611,18 @@ module.exports = __webpack_require__(1).Object.assign;
 /* 74 */,
 /* 75 */,
 /* 76 */,
-/* 77 */
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 19.1.2.1 Object.assign(target, source, ...)
 var getKeys  = __webpack_require__(31)
-  , gOPS     = __webpack_require__(79)
+  , gOPS     = __webpack_require__(83)
   , pIE      = __webpack_require__(38)
   , toObject = __webpack_require__(25)
   , IObject  = __webpack_require__(22)
@@ -666,29 +654,29 @@ module.exports = !$assign || __webpack_require__(6)(function(){
 } : $assign;
 
 /***/ }),
-/* 78 */,
-/* 79 */
+/* 82 */,
+/* 83 */
 /***/ (function(module, exports) {
 
 exports.f = Object.getOwnPropertySymbols;
 
 /***/ }),
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
 /* 84 */,
 /* 85 */,
 /* 86 */,
 /* 87 */,
 /* 88 */,
-/* 89 */
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(13);
 
-$export($export.S + $export.F, 'Object', {assign: __webpack_require__(77)});
+$export($export.S + $export.F, 'Object', {assign: __webpack_require__(81)});
 
 /***/ })
 /******/ ]);

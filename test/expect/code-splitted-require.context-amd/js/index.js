@@ -151,9 +151,6 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 function getTemplate(templateName, callback) {
     __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1)("./" + templateName)]; (function (mods) {
         callback(mods());

@@ -89,28 +89,26 @@ module.exports = {"page":"page--1QItB"};
 /* 3 */,
 /* 4 */,
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__css_style_modules_css__);
 
 
-var _react = __webpack_require__(0);
 
-var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(1);
 
-var _styleModules = __webpack_require__(2);
-
-var _styleModules2 = _interopRequireDefault(_styleModules);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _reactDom.render)(_react2.default.createElement(
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
   'div',
-  { className: _styleModules2.default.page },
+  { className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css___default.a.page },
   'Hi'
-));
+), document.getElementById('J-page'));
 
 /***/ })
 /******/ ]);

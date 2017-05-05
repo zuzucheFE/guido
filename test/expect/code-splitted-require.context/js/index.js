@@ -151,9 +151,6 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 function getTemplate(templateName, callback) {
     __webpack_require__.e/* require.ensure */(0).then((function (require) {
         callback(__webpack_require__(1)("./" + templateName)());

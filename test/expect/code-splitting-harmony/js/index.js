@@ -748,20 +748,16 @@ webpackAsyncContext.id = 33;
 /* 34 */,
 /* 35 */,
 /* 36 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_a__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_a___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_a__);
 
 
-var _promise = __webpack_require__(31);
-
-var _promise2 = _interopRequireDefault(_promise);
-
-var _a = __webpack_require__(32);
-
-var _a2 = _interopRequireDefault(_a);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 70)).then(function (b) {
     console.log('b loaded', b);
@@ -771,7 +767,7 @@ function loadC(name) {
     return __webpack_require__(33)("./" + name);
 }
 
-_promise2.default.all([loadC('1'), loadC('2')]).then(function (arr) {
+__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a.all([loadC('1'), loadC('2')]).then(function (arr) {
     console.log('c/1 and c/2 loaded', arr);
 });
 

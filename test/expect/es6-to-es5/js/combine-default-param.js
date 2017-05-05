@@ -63,21 +63,16 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 53);
 /******/ })
 /************************************************************************/
 /******/ ({
 
 /***/ 45:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-                                                value: true
-});
-exports.default = combineDefaultParam;
+/* harmony export (immutable) */ __webpack_exports__["a"] = combineDefaultParam;
 function combineDefaultParam() {
                                                 var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
                                                     _ref$bar = _ref.bar,
@@ -87,23 +82,17 @@ function combineDefaultParam() {
 
                                                 return bar + ', ' + baz;
 }
-module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 51:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 53:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__combine_default_param__ = __webpack_require__(45);
 
-
-var _combineDefaultParam = __webpack_require__(45);
-
-var _combineDefaultParam2 = _interopRequireDefault(_combineDefaultParam);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-alert((0, _combineDefaultParam2.default)({
+alert(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__combine_default_param__["a" /* default */])({
     bar: 'yay'
 }));
 

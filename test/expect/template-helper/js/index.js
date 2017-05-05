@@ -87,9 +87,6 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var tpl = __webpack_require__(0);
 
 var $el = document.getElementById('J-tpl');

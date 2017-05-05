@@ -149,10 +149,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ (function(module, exports) {
 
 console.log('I am component B.');
 
@@ -162,10 +159,7 @@ exports.xyz = function () {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ (function(module, exports) {
 
 console.log('I am component A.');
 
@@ -174,9 +168,6 @@ console.log('I am component A.');
 /* 3 */,
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 var a = __webpack_require__(1);
 var b = __webpack_require__(0);

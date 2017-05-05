@@ -70,9 +70,6 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var add = __webpack_require__(2).add;
 exports.increment = function (val) {
     return add(val, 1);
@@ -82,19 +79,13 @@ exports.increment = function (val) {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var inc = __webpack_require__(0).increment;
 var a = 1;
 inc(a); // 2
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ (function(module, exports) {
 
 exports.add = function () {
     var sum = 0,

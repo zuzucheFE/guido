@@ -578,9 +578,6 @@ function updateLink(linkElement, options, obj) {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 __webpack_require__(0);
 __webpack_require__.e/* require */(0).then(function() {[__webpack_require__(3)];}).catch(__webpack_require__.oe);
 

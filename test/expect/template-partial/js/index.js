@@ -1571,9 +1571,6 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 var $el2 = document.getElementById('J-tpl-2');
 
 var tpl2 = __webpack_require__(2);
