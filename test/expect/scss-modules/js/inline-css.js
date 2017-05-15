@@ -100,8 +100,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-1-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-1-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--1-oneOf-1-3!./style.modules.scss?__inline", function() {
-			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-1-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-1-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--1-oneOf-1-3!./style.modules.scss?__inline");
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-1-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-1-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--1-oneOf-1-3!./style.modules.scss?__inline", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-1-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-1-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--1-oneOf-1-3!./style.modules.scss?__inline");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -152,7 +152,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box--1Nnve{width:120px;height:400px}.page--30Pd1{width:100%;background:#fff}\n", ""]);
+exports.push([module.i, "body{background:#f00;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-box-sizing:border-box;box-sizing:border-box}body a{color:rgba(0,0,0,0.7)}body a:hover{text-decoration:none}body .box--1Nnve{width:120px;height:400px}.page--30Pd1{width:100%;background:#fff}\n", ""]);
 
 // exports
 exports.locals = {

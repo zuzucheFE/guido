@@ -526,9 +526,9 @@ exports.f = {}.propertyIsEnumerable;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = objectMerge;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
-/* harmony export (immutable) */ __webpack_exports__["a"] = objectMerge;
 
 function objectMerge(obj1, obj2) {
     return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default()(obj1, obj2);

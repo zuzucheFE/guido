@@ -100,8 +100,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-0-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-0-2!./style.modules.css?__inline", function() {
-			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-0-1!../../../../../node_modules/postcss-loader/index.js??ref--1-oneOf-0-2!./style.modules.css?__inline");
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-0-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-0-2!./style.modules.css?__inline", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-0-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-0-2!./style.modules.css?__inline");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -143,7 +143,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  box-sizing: border-box;\n}\n\n.page--1QItB {\n  width: 100%;\n  background: #fff;\n}\n", ""]);
+exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n.page--1QItB {\n  width: 100%;\n  background: #fff;\n}\n", ""]);
 
 // exports
 exports.locals = {
