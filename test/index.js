@@ -92,6 +92,9 @@ describe('Build', function() {
     it('css-modules', function() {
         return testBuild({}, 'css-modules');
     });
+    it('custom-structure', function() {
+        return testBuild({}, 'custom-structure');
+    });
     it('development-env', function() {
         return testBuild({
             env: 'development'
