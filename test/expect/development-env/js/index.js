@@ -80,7 +80,7 @@ eval("/* harmony export (immutable) */ __webpack_exports__[\"a\"] = Say;\nfuncti
 
 /***/ }),
 /* 1 */
-/* unknown exports provided */
+/* no static exports found */
 /*!***************************!*\
   !*** ./src/css/style.css ***!
   \***************************/
@@ -90,7 +90,7 @@ eval("// removed by extract-text-webpack-plugin//# sourceMappingURL=data:applica
 
 /***/ }),
 /* 2 */
-/* unknown exports provided */
+/* no static exports found */
 /* all exports used */
 /*!*************************!*\
   !*** ./src/js/index.js ***!
