@@ -1,7 +1,8 @@
 import $ from 'jquery';
-import { mainTpl } from './main.handlebars';
+import mainTpl from './main.handlebars';
+import partial2Tpl from './partial2.handlebars';
 
-$(document.body).innerHTML = mainTpl({
+let str = mainTpl({
     data: [{
         name: 'Eddard'
     }, {
@@ -13,4 +14,16 @@ $(document.body).innerHTML = mainTpl({
     }, {
         name: 'Jon Snow'
     }]
+}, {
+    helpers: {
+        isGuide: function (options) {
+            return options.fn(this);
+        }
+    },
+
+    partials: {
+        partial2: partial2Tpl
+    }
 });
+
+$(document.body).html(str);
