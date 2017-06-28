@@ -2,8 +2,7 @@ body {
   background: #f00;
   -webkit-transform: translate3d(0,0,0);
           transform: translate3d(0,0,0);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page--1QItB {
