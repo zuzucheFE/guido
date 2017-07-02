@@ -115,7 +115,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n", ""]);
+exports.push([module.i, "body {\n  background: #f00;\n  -webkit-transform: translate3d(0,0,0);\n          transform: translate3d(0,0,0);\n  box-sizing: border-box;\n}\n", ""]);
 
 // exports
 
