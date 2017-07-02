@@ -5,6 +5,7 @@ language: node_js
 branches:
   only:
     - master
+    - webpack-3
 
 node_js:
   - "6"
