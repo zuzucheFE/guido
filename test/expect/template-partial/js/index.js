@@ -34,9 +34,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -64,14 +61,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+module.exports = window.handlebars;
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(1);
+var Handlebars = __webpack_require__(0);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -82,34 +85,13 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 },"useData":true});
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = window.handlebars;
-
-/***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(1);
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<h2>"
-    + container.escapeExpression(container.lambda((depth0 != null ? depth0.title2 : depth0), depth0))
-    + "</h2>\n\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(0),depth0,{"name":"partial3","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
-},"usePartial":true,"useData":true});
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $el2 = document.getElementById('J-tpl-2');
 
-var tpl2 = __webpack_require__(2);
-var tpl3 = __webpack_require__(0);
+var tpl2 = __webpack_require__(3);
+var tpl3 = __webpack_require__(1);
 $el2.innerHTML = tpl2({
     title2: 'title2',
     title3: 'title3'
@@ -118,6 +100,21 @@ $el2.innerHTML = tpl2({
 });
 
 console.log('template-partial done.');
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Handlebars = __webpack_require__(0);
+function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<h2>"
+    + container.escapeExpression(container.lambda((depth0 != null ? depth0.title2 : depth0), depth0))
+    + "</h2>\n\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(1),depth0,{"name":"partial3","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"usePartial":true,"useData":true});
 
 /***/ })
 /******/ ]);

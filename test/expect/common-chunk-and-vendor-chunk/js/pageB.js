@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 6:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
 var utility2 = __webpack_require__(0);
@@ -10,4 +10,4 @@ module.exports = "pageB";
 
 /***/ })
 
-},[6]);
+},[7]);

@@ -112,9 +112,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -145,7 +142,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -160,22 +157,20 @@ exports.xyz = function () {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-console.log('I am component A.');
-
-/***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var a = __webpack_require__(1);
+var a = __webpack_require__(2);
 var b = __webpack_require__(0);
 __webpack_require__.e/* require.ensure */(0).then((function (require) {
     __webpack_require__(0).xyz();
-    var d = __webpack_require__(3);
+    var d = __webpack_require__(4);
 }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+console.log('I am component A.');
 
 /***/ })
 /******/ ]);

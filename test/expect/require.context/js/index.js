@@ -33,9 +33,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -63,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -94,6 +91,16 @@ module.exports = function () {
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+function getTemplate(templateName) {
+    return __webpack_require__(4)("./" + templateName);
+}
+console.log(getTemplate('a'));
+console.log(getTemplate('b'));
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var map = {
 	"./a": 0,
 	"./a.js": 0,
@@ -116,17 +123,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 3;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-function getTemplate(templateName) {
-    return __webpack_require__(3)("./" + templateName);
-}
-console.log(getTemplate('a'));
-console.log(getTemplate('b'));
+webpackContext.id = 4;
 
 /***/ })
 /******/ ]);
