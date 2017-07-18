@@ -249,7 +249,7 @@ function multiply() {
 }
 
 function list() {
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default.a(arguments);
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arguments);
 }
 
 /***/ }),
@@ -462,7 +462,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_0__math__["a" /* add */](1, 2);
+Object(__WEBPACK_IMPORTED_MODULE_0__math__["a" /* add */])(1, 2);
 __WEBPACK_IMPORTED_MODULE_1__library__["a" /* reexportedMultiply */](1, 2);
 
 /***/ }),

@@ -92,7 +92,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
   'div',
   { className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css_inline___default.a.page },
   'Hi'

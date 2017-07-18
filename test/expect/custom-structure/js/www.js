@@ -77,7 +77,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var $body = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a(document.body);
+var $body = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document.body);
 
 /***/ }),
 /* 1 */

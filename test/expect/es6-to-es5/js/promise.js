@@ -853,7 +853,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__promise__ = __webpack_require__(78);
 
 
-__WEBPACK_IMPORTED_MODULE_0__promise__["a" /* default */](true).then(function (result) {
+Object(__WEBPACK_IMPORTED_MODULE_0__promise__["a" /* default */])(true).then(function (result) {
   return alert(result);
 }).catch(function (error) {
   return alert(error);

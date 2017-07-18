@@ -104,7 +104,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var str = __WEBPACK_IMPORTED_MODULE_1__main_handlebars___default.a({
+var str = __WEBPACK_IMPORTED_MODULE_1__main_handlebars___default()({
     data: [{
         name: 'Eddard'
     }, {
@@ -128,7 +128,7 @@ var str = __WEBPACK_IMPORTED_MODULE_1__main_handlebars___default.a({
     }
 });
 
-__WEBPACK_IMPORTED_MODULE_0_jquery___default.a(document.body).html(str);
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()(document.body).html(str);
 
 /***/ }),
 /* 3 */

@@ -72,8 +72,8 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_exports_multi__ = __webpack_require__(67);
 
-__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["b" /* success */]();
-__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["a" /* error */]();
+Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["b" /* success */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["a" /* error */])();
 
 /***/ }),
 

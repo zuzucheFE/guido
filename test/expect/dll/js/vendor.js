@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>template-css-inline</title>
-    <style>
-/*! template-css-inline v1.0.0 */
-body {
-  background: #f00;
-  -webkit-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
-  box-sizing: border-box;
-}
-</style>
-</head>
-<body>
-
-<script>/*! template-css-inline v1.0.0 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -85,17 +67,41 @@ body {
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-
-console.log('css inline done.');
+module.exports = __webpack_require__;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["default"] = vendor1;
+function vendor1() {
+    console.log('i am vendor1');
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["default"] = vendor2;
+function vendor2() {
+    console.log('i am vendor2');
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["default"] = vendor3;
+function vendor3() {
+    console.log('i am vendor3');
+}
+
 
 /***/ })
-/******/ ]);</script>
-</body>
-</html>
+/******/ ]);

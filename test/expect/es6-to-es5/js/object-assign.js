@@ -553,14 +553,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var a = { code: 0 };
 var b = { msg: 'wow!' };
 
-alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default.a(a));
-alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default.a(b));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(a));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(b));
 
-var c = __WEBPACK_IMPORTED_MODULE_1__object_assign__["a" /* default */](a, b);
+var c = Object(__WEBPACK_IMPORTED_MODULE_1__object_assign__["a" /* default */])(a, b);
 
-alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default.a(a));
-alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default.a(b));
-alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default.a(c));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(a));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(b));
+alert(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(c));
 
 /***/ }),
 /* 69 */
@@ -588,7 +588,7 @@ module.exports = function stringify(it){ // eslint-disable-line no-unused-vars
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
 
 function objectMerge(obj1, obj2) {
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a(obj1, obj2);
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default()(obj1, obj2);
 }
 
 /***/ }),
