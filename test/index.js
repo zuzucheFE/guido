@@ -161,6 +161,9 @@ describe('Build', function() {
     it('template-image', function() {
         return testBuild({}, 'template-image');
     });
+    it('template-minify', function() {
+        return testBuild({}, 'template-minify');
+    });
     it('template-partial', function() {
         return testBuild({}, 'template-partial');
     });
