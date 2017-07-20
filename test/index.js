@@ -155,6 +155,9 @@ describe('Build', function() {
     it('template-css-inline', function() {
         return testBuild({}, 'template-css-inline');
     });
+    it('template-filter', function() {
+        return testBuild({}, 'template-filter');
+    });
     it('template-helper', function() {
         return testBuild({}, 'template-helper');
     });
