@@ -3,7 +3,7 @@ title: 快速上手
 ---
 
 
-在使用Guido之前，需了解[webpack2](https://webpack.js.org/)的使用，并已安装Node v4.3.x以上版本。
+在使用Guido之前，需了解[webpack3](https://webpack.js.org/)的使用，并已安装Node v4.3.x以上版本。
 
 
 ### 1. 安装
@@ -68,6 +68,6 @@ guido build
 
 ### 扩展阅读
 
-- [webpack2官方文档](https://webpack.js.org/)
-- [webpack2中文文档](http://www.css88.com/doc/webpack2/)
+- [webpack3官方文档](https://webpack.js.org/)
+- [webpack3中文文档](https://doc.webpack-china.org/)
 
