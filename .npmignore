@@ -2,6 +2,7 @@ docs/
 test/
 coverage/
 node_modules/
+~*
 *.yml
 .gitignore
 .editorconfig
