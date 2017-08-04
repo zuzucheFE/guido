@@ -55,7 +55,7 @@
     "glob": "^7.1.2",
     "handlebars": "^4.0.10",
     "handlebars-loader": "^1.5.0",
-    "html-webpack-plugin": "^2.29.0",
+    "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.3.1",
     "node-sass": "^4.5.3",
     "postcss-iconfont": "^1.0.0",
@@ -73,7 +73,7 @@
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
+    "mocha": "^3.5.0",
     "mocha-lcov-reporter": "^1.3.0",
     "style-loader": "^0.18.1"
   }
