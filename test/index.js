@@ -152,6 +152,9 @@ describe('Build', function() {
     it('sprites-split-retina', function() {
         return testBuild({}, 'sprites-split-retina');
     });
+    it('template-crossorigin', function() {
+        return testBuild({}, 'template-crossorigin');
+    });
     it('template-css-inline', function() {
         return testBuild({}, 'template-css-inline');
     });
