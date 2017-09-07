@@ -182,4 +182,7 @@ describe('Build', function() {
     it('template-render-data', function() {
         return testBuild({}, 'template-render-data');
     });
+    it('template-require-resources', function() {
+        return testBuild({}, 'template-require-resources');
+    });
 });
