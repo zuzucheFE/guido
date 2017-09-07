@@ -1,9 +1,10 @@
-docs/
-test/
 coverage/
+docs/
+example/
 node_modules/
+test/
 ~*
-*.yml
-.gitignore
 .editorconfig
+.gitignore
 .npmrc
+*.yml
