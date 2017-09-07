@@ -27,3 +27,26 @@
 .woody-url {
   background: url(../images/woody.jpg?__url) no-repeat 0 0;
 }
+
+
+.arrows {
+  background: url(../images/arrows.png) no-repeat 0 0;
+}
+.arrows-inline {
+  background: url(../images/arrows.png?__inline) no-repeat 0 0;
+}
+.arrows-url {
+  background: url(../images/arrows.png?__url) no-repeat 0 0;
+}
+
+
+
+.p1 {
+  background: url(../images/p1.png) no-repeat 0 0;
+}
+.p1-inline {
+  background: url(../images/p1.png?__inline) no-repeat 0 0;
+}
+.p1-url {
+  background: url(../images/p1.png?__url) no-repeat 0 0;
+}

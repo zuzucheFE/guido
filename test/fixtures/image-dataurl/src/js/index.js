@@ -45,4 +45,32 @@ let woodyUrl = document.createElement('div');
 woodyUrl.innerHTML = '<img src="' + require('../images/woody.jpg?__url') + '">';
 fragment.appendChild(woodyUrl);
 
+
+
+let arrows = document.createElement('div');
+arrows.innerHTML = '<img src="' + require('../images/arrows.png') + '">';
+fragment.appendChild(arrows);
+
+let arrowsInline = document.createElement('div');
+arrowsInline.innerHTML = '<img src="' + require('../images/arrows.png?__inline') + '">';
+fragment.appendChild(arrowsInline);
+
+let arrowsUrl = document.createElement('div');
+arrowsUrl.innerHTML = '<img src="' + require('../images/arrows.png?__url') + '">';
+fragment.appendChild(arrowsUrl);
+
+
+
+let p1 = document.createElement('div');
+p1.innerHTML = '<img src="' + require('../images/p1.png') + '">';
+fragment.appendChild(p1);
+
+let p1Inline = document.createElement('div');
+p1Inline.innerHTML = '<img src="' + require('../images/p1.png?__inline') + '">';
+fragment.appendChild(p1Inline);
+
+let p1Url = document.createElement('div');
+p1Url.innerHTML = '<img src="' + require('../images/p1.png?__url') + '">';
+fragment.appendChild(p1Url);
+
 document.body.appendChild(fragment);

@@ -158,6 +158,9 @@ describe('Build', function() {
     it('template-css-inline', function() {
         return testBuild({}, 'template-css-inline');
     });
+    it('template-dist-resources', function() {
+        return testBuild({}, 'template-dist-resources');
+    });
     it('template-filter', function() {
         return testBuild({}, 'template-filter');
     });
@@ -172,6 +175,9 @@ describe('Build', function() {
     });
     it('template-partial', function() {
         return testBuild({}, 'template-partial');
+    });
+    it('template-publish-resources', function() {
+        return testBuild({}, 'template-publish-resources');
     });
     it('template-render-data', function() {
         return testBuild({}, 'template-render-data');
