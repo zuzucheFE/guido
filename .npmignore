@@ -4,6 +4,10 @@ example/
 node_modules/
 test/
 ~*
+*.log
+.vscode
+.DS_Store
+.idea
 .editorconfig
 .gitignore
 .npmrc

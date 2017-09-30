@@ -9,3 +9,5 @@
 .idea
 .npmrc
 .guido-cache
+~*
+/test/fixtures/combo
