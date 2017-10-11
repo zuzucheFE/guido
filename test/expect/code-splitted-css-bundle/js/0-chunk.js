@@ -23,24 +23,12 @@ if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
 
-var options = {}
+var options = {"hmr":false}
 options.transform = transform
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, options);
 if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-2-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-2-2!./style2.css?__inline", function() {
-			var newContent = require("!!../../../../../node_modules/css-loader/index.js??ref--1-oneOf-2-1!../../../../../node_modules/postcss-loader/lib/index.js??ref--1-oneOf-2-2!./style2.css?__inline");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
+
 
 /***/ }),
 /* 9 */
