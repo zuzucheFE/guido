@@ -22,11 +22,13 @@ function filterBase64(str) {
 function testBuild(webpackConfig, fixtureDir, options = {}) {
     return new Promise(function(resolve, reject) {
         const cwd = path.join(__dirname, 'fixtures', fixtureDir);
+        const cacheDir = path.join(cwd, '.guido-cache');
         const outputDir = path.join(cwd, 'dist');
 
         const expectDir = path.join(__dirname, 'expect', fixtureDir);
 
         process.chdir(cwd);
+        del.sync(cacheDir);
         del.sync(outputDir);
 
         webpackConfig.env || (webpackConfig.env = '');
