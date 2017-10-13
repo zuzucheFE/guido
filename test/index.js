@@ -28,12 +28,11 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
         const expectDir = path.join(__dirname, 'expect', fixtureDir);
 
         process.chdir(cwd);
-        del.sync(cacheDir);
         del.sync(outputDir);
 
         webpackConfig.env || (webpackConfig.env = '');
         webpackConfig.cwd = cwd;
-        webpackConfig.quiet = true; // 不输出任何信息
+        webpackConfig.quiet === undefined && (webpackConfig.quiet = true); // 不输出任何信息
 
         build(webpackConfig, function (error) {
             if (error) {
@@ -55,6 +54,9 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
                     expect(outputFile).to.equal(expectFile);
                 }
             });
+
+            del.sync(cacheDir);
+
             resolve();
         });
     });
@@ -64,6 +66,9 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
 describe('Build', function() {
     this.timeout(10000);
 
+    it('browserslist', function() {
+        return testBuild({}, 'browserslist');
+    });
     it('code-splitted-css-bundle', function() {
         return testBuild({}, 'code-splitted-css-bundle');
     });
@@ -105,6 +110,9 @@ describe('Build', function() {
     it('es6 to es5', function() {
         return testBuild({}, 'es6-to-es5');
     });
+    it('eslint', function() {
+        return testBuild({}, 'eslint');
+    });
     it('extra-async-chunk', function() {
         return testBuild({}, 'extra-async-chunk');
     });
@@ -126,6 +134,11 @@ describe('Build', function() {
         return testBuild({
             env: 'production'
         }, 'production-env');
+    });
+    it('quiet-mode', function() {
+        return testBuild({
+            quiet: false
+        }, 'quiet-mode');
     });
     it('require.context', function() {
         return testBuild({}, 'require.context');
