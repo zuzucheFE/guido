@@ -11,6 +11,15 @@ module.exports = {
             commonjs: 'handlebars',
             amd: 'handlebars',
             umd: 'handlebars'
+        },
+
+        'jquery': {
+            root: 'window.jQuery',
+            var: 'window.jQuery',
+            commonjs2: 'jquery',
+            commonjs: 'jquery',
+            amd: 'jquery',
+            umd: 'jquery'
         }
     }]
 };
