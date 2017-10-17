@@ -127,6 +127,20 @@ describe('Build', function() {
             ignoreImageBase64: true
         });
     });
+    it('imagemin-jpg-min', function() {
+        return testBuild({
+            env: 'production'
+        }, 'imagemin-jpg-min', {
+            ignoreImageBase64: true
+        });
+    });
+    it('imagemin-jpg-min-disabled', function() {
+        return testBuild({
+            env: 'production'
+        }, 'imagemin-jpg-min-disabled', {
+            ignoreImageBase64: true
+        });
+    });
     it('jsx', function() {
         return testBuild({}, 'jsx');
     });
