@@ -1,6 +1,4 @@
 /test/fixtures/**/dist
-/test/debug.js
-/test/replicate-all.js
 /coverage
 /node_modules
 *.log
