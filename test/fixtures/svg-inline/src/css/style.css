@@ -1,0 +1,11 @@
+body {
+  background: #f00;
+  transform: translate3d(0,0,0);
+  box-sizing: border-box;
+}
+
+.page-placeholder {
+  background: url(../images/page_placeholder.svg?__inline);
+}
+
+
