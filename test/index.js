@@ -149,10 +149,10 @@ describe('Build', function() {
             env: 'production'
         }, 'production-env');
     });
-    it('quiet-mode', function() {
+    it('verbose-mode', function() {
         return testBuild({
             quiet: false
-        }, 'quiet-mode');
+        }, 'verbose-mode');
     });
     it('require.context', function() {
         return testBuild({}, 'require.context');
