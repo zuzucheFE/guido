@@ -4,8 +4,12 @@ body {
   box-sizing: border-box;
 }
 
+.github {
+  background: url(../images/google.svg);
+}
+
 .google {
-  background: url(../images/google.svg?__inline);
+  background: url(../images/google.svg?__url);
 }
 
 

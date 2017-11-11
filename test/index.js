@@ -172,6 +172,12 @@ describe('Build', function() {
     it('sprites-retina', function() {
         return testBuild({}, 'sprites-retina');
     });
+    it('svg-inline', function() {
+        return testBuild({}, 'svg-inline');
+    });
+    it('svg-url', function() {
+        return testBuild({}, 'svg-url');
+    });
     it('svg-to-font', function() {
         return testBuild({}, 'svg-to-font');
     });
