@@ -175,6 +175,9 @@ describe('Build', function() {
     it('svg-inline', function() {
         return testBuild({}, 'svg-inline');
     });
+    it('svg-sprite', function() {
+        return testBuild({}, 'svg-sprite');
+    });
     it('svg-url', function() {
         return testBuild({}, 'svg-url');
     });
