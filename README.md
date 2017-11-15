@@ -33,6 +33,7 @@ guido -v
 - [x] handlebars
 - [x] 资源文件dataurl
 - [x] svg to webfont
+- [x] svg sprite
 - [x] 本地开发服务
 
 
