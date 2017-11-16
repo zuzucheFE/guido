@@ -60,17 +60,11 @@
 /******/ 	__webpack_require__.p = "../";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 29);
+/******/ 	return __webpack_require__(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-module.exports = window.React;
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -344,10 +338,10 @@ return BrowserSpriteSymbol;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -1353,10 +1347,10 @@ return sprite$1;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports) {
 
 var core = module.exports = { version: '2.5.1' };
@@ -1364,17 +1358,17 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(15)(function () {
+module.exports = !__webpack_require__(11)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 var g;
@@ -1401,13 +1395,19 @@ module.exports = g;
 
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = window.React;
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(7);
-var core = __webpack_require__(3);
-var ctx = __webpack_require__(19);
-var hide = __webpack_require__(34);
+var core = __webpack_require__(2);
+var ctx = __webpack_require__(15);
+var hide = __webpack_require__(37);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -1501,174 +1501,14 @@ module.exports = function (it) {
 
 /***/ }),
 /* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = EditSpriteSymbolComponent;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return symbolData; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-
-
-
-let symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
-  "id": "edit",
-  "use": "edit-usage",
-  "viewBox": "0 0 34 32",
-  "content": "<symbol viewBox=\"0 0 34 32\" id=\"edit\"><path d=\"M28.5,32h-23C3.6,32,2,30.4,2,28.5v-25C2,1.6,3.6,0,5.5,0h15C21.3,0,22,0.7,22,1.5S21.3,3,20.5,3h-15\tC5.2,3,5,3.2,5,3.5v25C5,28.8,5.2,29,5.5,29h23c0.3,0,0.5-0.2,0.5-0.5v-17c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v17\tC32,30.4,30.4,32,28.5,32z\" /><path d=\"M13,20.5c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l17-17c0.6-0.6,1.5-0.6,2.1,0s0.6,1.5,0,2.1l-17,17\tC13.8,20.4,13.4,20.5,13,20.5z\" /></symbol>"
-});
-__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
-function EditSpriteSymbolComponent(props) {
-                var newProps = {};
-                if (props.className !== undefined) {
-                    newProps.className = props.className;
-                }
-                for (var i in props) {
-                    if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
-                        newProps[i] = props[i];
-                    }
-                }
-                return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg',
-                    newProps,
-                    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#edit' })
-                );
-            };
-let symbolData = symbol
-
-/***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = GearSpriteSymbolComponent;
-/* unused harmony export symbolData */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-
-
-
-let symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
-  "id": "gear",
-  "use": "gear-usage",
-  "viewBox": "0 0 34 34",
-  "content": "<symbol viewBox=\"0 0 34 34\" id=\"gear\"><path d=\"M17,23c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S20.3,23,17,23z M17,14c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3\tS18.7,14,17,14z\" /><path d=\"M22,33L22,33c-1.3,0-2.4-0.6-3.1-1.7c-0.4-0.6-1.1-1-1.9-1s-1.5,0.4-1.9,1C14.4,32.4,13.3,33,12,33\tc-0.5,0-1-0.1-1.4-0.3c-1.5-0.6-2.9-1.4-4.1-2.4c-1.4-1.1-1.8-3-0.9-4.5c0.4-0.7,0.4-1.5,0-2.2c-0.4-0.7-1.1-1.1-1.8-1.1\tc-1.8-0.1-3.2-1.4-3.5-3C0.1,18.7,0,17.8,0,17s0.1-1.7,0.2-2.5c0.3-1.7,1.7-3,3.5-3c0.8,0,1.5-0.4,1.8-1.1c0.4-0.7,0.4-1.5,0-2.2\tC4.7,6.7,5.1,4.8,6.5,3.7c1.3-1,2.6-1.8,4.1-2.4C11,1.1,11.5,1,12,1c1.3,0,2.4,0.6,3.1,1.7c0.4,0.6,1.1,1,1.9,1s1.5-0.4,1.9-1\tC19.6,1.6,20.7,1,22,1c0.5,0,1,0.1,1.4,0.3c1.5,0.6,2.9,1.4,4.1,2.4c1.4,1.1,1.8,3,0.9,4.5c-0.4,0.7-0.4,1.5,0,2.2\tc0.4,0.7,1.1,1.1,1.8,1.1c1.8,0.1,3.2,1.4,3.5,3c0.1,0.8,0.2,1.7,0.2,2.5s-0.1,1.7-0.2,2.5c-0.3,1.7-1.7,3-3.5,3\tc-0.8,0-1.5,0.4-1.8,1.1c-0.4,0.7-0.4,1.5,0,2.2c0.8,1.5,0.4,3.4-0.9,4.5c-1.3,1-2.6,1.8-4.1,2.4C23,32.9,22.5,33,22,33z M17,27.3\tc1.8,0,3.4,0.9,4.4,2.4c0.2,0.3,0.5,0.4,0.9,0.3c1.2-0.5,2.4-1.2,3.4-2c0.2-0.2,0.3-0.5,0.2-0.7c-0.9-1.6-0.9-3.5,0-5.1\tc0.9-1.6,2.5-2.5,4.3-2.6c0.3,0,0.6-0.2,0.7-0.5c0.1-0.7,0.2-1.4,0.2-2s-0.1-1.4-0.2-2c0-0.3-0.3-0.5-0.7-0.5\tc-1.8-0.1-3.4-1-4.3-2.6c-0.9-1.6-0.9-3.5,0-5.1C26,6.5,25.9,6.2,25.7,6c-1-0.8-2.2-1.5-3.4-2c-0.3-0.1-0.7,0-0.9,0.3\tc-1,1.5-2.6,2.4-4.4,2.4s-3.4-0.9-4.4-2.4C12.4,4,12,3.9,11.7,4.1c-1.2,0.5-2.4,1.2-3.4,2C8.1,6.2,8,6.5,8.2,6.7\tc0.9,1.6,0.9,3.5,0,5.1c-0.9,1.6-2.5,2.5-4.3,2.6c-0.3,0-0.6,0.2-0.7,0.5C3.1,15.6,3,16.3,3,17s0.1,1.4,0.2,2c0,0.3,0.3,0.5,0.7,0.5\tc1.8,0.1,3.4,1,4.3,2.6c0.9,1.6,0.9,3.5,0,5.1C8,27.5,8.1,27.8,8.3,28c1,0.8,2.2,1.5,3.4,2c0.3,0.1,0.7,0,0.9-0.3\tC13.6,28.2,15.2,27.3,17,27.3z\" /></symbol>"
-});
-__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
-function GearSpriteSymbolComponent(props) {
-                var newProps = {};
-                if (props.className !== undefined) {
-                    newProps.className = props.className;
-                }
-                for (var i in props) {
-                    if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
-                        newProps[i] = props[i];
-                    }
-                }
-                return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg',
-                    newProps,
-                    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#gear' })
-                );
-            };
-let symbolData = symbol
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = InfoSpriteSymbolComponent;
-/* unused harmony export symbolData */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-
-
-
-let symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
-  "id": "info",
-  "use": "info-usage",
-  "viewBox": "0 0 34 34",
-  "content": "<symbol viewBox=\"0 0 34 34\" id=\"info\"><path d=\"M17,34C7.6,34,0,26.4,0,17S7.6,0,17,0s17,7.6,17,17S26.4,34,17,34z M17,3C9.3,3,3,9.3,3,17s6.3,14,14,14\ts14-6.3,14-14S24.7,3,17,3z\" /><path d=\"M17 12L17 12c-.8 0-1.5-.7-1.5-1.5v-1C15.5 8.7 16.2 8 17 8h0c.8 0 1.5.7 1.5 1.5v1C18.5 11.3 17.8 12 17 12zM17 26L17 26c-.8 0-1.5-.7-1.5-1.5v-9c0-.8.7-1.5 1.5-1.5h0c.8 0 1.5.7 1.5 1.5v9C18.5 25.3 17.8 26 17 26z\" /></symbol>"
-});
-__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
-function InfoSpriteSymbolComponent(props) {
-                var newProps = {};
-                if (props.className !== undefined) {
-                    newProps.className = props.className;
-                }
-                for (var i in props) {
-                    if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
-                        newProps[i] = props[i];
-                    }
-                }
-                return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg',
-                    newProps,
-                    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#info' })
-                );
-            };
-let symbolData = symbol
-
-/***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = SearchSpriteSymbolComponent;
-/* unused harmony export symbolData */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-
-
-
-let symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
-  "id": "search",
-  "use": "search-usage",
-  "viewBox": "0 0 28 28",
-  "content": "<symbol viewBox=\"0 0 28 28\" id=\"search\"><path d=\"M27.6,25.4l-4.4-4.4c1.8-2.2,2.8-5,2.8-8.1c0-7.2-5.8-13-13-13C5.8,0,0,5.8,0,13c0,7.2,5.8,13,13,13\tc3,0,5.8-1.1,8.1-2.8l4.4,4.4c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4C28.1,27,28.1,26,27.6,25.4z M3,13C3,7.5,7.5,3,13,3\tc5.5,0,10,4.5,10,10c0,5.5-4.5,10-10,10C7.5,23,3,18.5,3,13z\" /></symbol>"
-});
-__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
-function SearchSpriteSymbolComponent(props) {
-                var newProps = {};
-                if (props.className !== undefined) {
-                    newProps.className = props.className;
-                }
-                for (var i in props) {
-                    if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
-                        newProps[i] = props[i];
-                    }
-                }
-                return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg',
-                    newProps,
-                    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#search' })
-                );
-            };
-let symbolData = symbol
-
-/***/ }),
-/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(8);
-var IE8_DOM_DEFINE = __webpack_require__(20);
-var toPrimitive = __webpack_require__(22);
+var IE8_DOM_DEFINE = __webpack_require__(16);
+var toPrimitive = __webpack_require__(18);
 var dP = Object.defineProperty;
 
-exports.f = __webpack_require__(4) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+exports.f = __webpack_require__(3) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -1682,7 +1522,7 @@ exports.f = __webpack_require__(4) ? Object.defineProperty : function defineProp
 
 
 /***/ }),
-/* 15 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -1695,19 +1535,19 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 16 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(41);
-var defined = __webpack_require__(24);
+var IObject = __webpack_require__(44);
+var defined = __webpack_require__(20);
 module.exports = function (it) {
   return IObject(defined(it));
 };
 
 
 /***/ }),
-/* 17 */
+/* 13 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -1717,22 +1557,22 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 18 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(53)('keys');
-var uid = __webpack_require__(54);
+var shared = __webpack_require__(56)('keys');
+var uid = __webpack_require__(57);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
 };
 
 
 /***/ }),
-/* 19 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(33);
+var aFunction = __webpack_require__(36);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -1754,16 +1594,16 @@ module.exports = function (fn, that, length) {
 
 
 /***/ }),
-/* 20 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(4) && !__webpack_require__(15)(function () {
-  return Object.defineProperty(__webpack_require__(21)('div'), 'a', { get: function () { return 7; } }).a != 7;
+module.exports = !__webpack_require__(3) && !__webpack_require__(11)(function () {
+  return Object.defineProperty(__webpack_require__(17)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 21 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(9);
@@ -1776,7 +1616,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 22 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -1794,7 +1634,7 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 23 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -1808,7 +1648,7 @@ module.exports = function (bitmap, value) {
 
 
 /***/ }),
-/* 24 */
+/* 20 */
 /***/ (function(module, exports) {
 
 // 7.2.1 RequireObjectCoercible(argument)
@@ -1819,7 +1659,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 25 */
+/* 21 */
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -1831,7 +1671,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 26 */
+/* 22 */
 /***/ (function(module, exports) {
 
 // IE 8- don't enum bug keys
@@ -1841,39 +1681,46 @@ module.exports = (
 
 
 /***/ }),
-/* 27 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
-var defined = __webpack_require__(24);
+var defined = __webpack_require__(20);
 module.exports = function (it) {
   return Object(defined(it));
 };
 
 
 /***/ }),
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
 /* 28 */,
-/* 29 */
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_dom__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_dom__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_edit_svg_sprite__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_gear_svg_sprite__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_info_svg_sprite__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_search_svg_sprite__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_edit_svg_sprite__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_gear_svg_sprite__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_info_svg_sprite__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_search_svg_sprite__ = __webpack_require__(68);
 
 
 
@@ -1929,33 +1776,33 @@ __WEBPACK_IMPORTED_MODULE_5_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 console.log('svg sprite done.');
 
 /***/ }),
-/* 30 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(31), __esModule: true };
+module.exports = { "default": __webpack_require__(34), __esModule: true };
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(32);
-var $Object = __webpack_require__(3).Object;
+__webpack_require__(35);
+var $Object = __webpack_require__(2).Object;
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
 
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(6);
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-$export($export.S + $export.F * !__webpack_require__(4), 'Object', { defineProperty: __webpack_require__(14).f });
+$export($export.S + $export.F * !__webpack_require__(3), 'Object', { defineProperty: __webpack_require__(10).f });
 
 
 /***/ }),
-/* 33 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -1965,12 +1812,12 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(14);
-var createDesc = __webpack_require__(23);
-module.exports = __webpack_require__(4) ? function (object, key, value) {
+var dP = __webpack_require__(10);
+var createDesc = __webpack_require__(19);
+module.exports = __webpack_require__(3) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
   object[key] = value;
@@ -1979,30 +1826,30 @@ module.exports = __webpack_require__(4) ? function (object, key, value) {
 
 
 /***/ }),
-/* 35 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(36), __esModule: true };
+module.exports = { "default": __webpack_require__(39), __esModule: true };
 
 /***/ }),
-/* 36 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(37);
-module.exports = __webpack_require__(3).Object.setPrototypeOf;
+__webpack_require__(40);
+module.exports = __webpack_require__(2).Object.setPrototypeOf;
 
 
 /***/ }),
-/* 37 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
 var $export = __webpack_require__(6);
-$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(38).set });
+$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(41).set });
 
 
 /***/ }),
-/* 38 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -2017,7 +1864,7 @@ module.exports = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
     function (test, buggy, set) {
       try {
-        set = __webpack_require__(19)(Function.call, __webpack_require__(39).f(Object.prototype, '__proto__').set, 2);
+        set = __webpack_require__(15)(Function.call, __webpack_require__(42).f(Object.prototype, '__proto__').set, 2);
         set(test, []);
         buggy = !(test instanceof Array);
       } catch (e) { buggy = true; }
@@ -2033,18 +1880,18 @@ module.exports = {
 
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var pIE = __webpack_require__(40);
-var createDesc = __webpack_require__(23);
-var toIObject = __webpack_require__(16);
-var toPrimitive = __webpack_require__(22);
-var has = __webpack_require__(17);
-var IE8_DOM_DEFINE = __webpack_require__(20);
+var pIE = __webpack_require__(43);
+var createDesc = __webpack_require__(19);
+var toIObject = __webpack_require__(12);
+var toPrimitive = __webpack_require__(18);
+var has = __webpack_require__(13);
+var IE8_DOM_DEFINE = __webpack_require__(16);
 var gOPD = Object.getOwnPropertyDescriptor;
 
-exports.f = __webpack_require__(4) ? gOPD : function getOwnPropertyDescriptor(O, P) {
+exports.f = __webpack_require__(3) ? gOPD : function getOwnPropertyDescriptor(O, P) {
   O = toIObject(O);
   P = toPrimitive(P, true);
   if (IE8_DOM_DEFINE) try {
@@ -2055,18 +1902,18 @@ exports.f = __webpack_require__(4) ? gOPD : function getOwnPropertyDescriptor(O,
 
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports) {
 
 exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
-/* 41 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(42);
+var cof = __webpack_require__(45);
 // eslint-disable-next-line no-prototype-builtins
 module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
   return cof(it) == 'String' ? it.split('') : Object(it);
@@ -2074,7 +1921,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 42 */
+/* 45 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2085,53 +1932,53 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 43 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(44), __esModule: true };
+module.exports = { "default": __webpack_require__(47), __esModule: true };
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(45);
-var $Object = __webpack_require__(3).Object;
+__webpack_require__(48);
+var $Object = __webpack_require__(2).Object;
 module.exports = function create(P, D) {
   return $Object.create(P, D);
 };
 
 
 /***/ }),
-/* 45 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(6);
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', { create: __webpack_require__(46) });
+$export($export.S, 'Object', { create: __webpack_require__(49) });
 
 
 /***/ }),
-/* 46 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(8);
-var dPs = __webpack_require__(47);
-var enumBugKeys = __webpack_require__(26);
-var IE_PROTO = __webpack_require__(18)('IE_PROTO');
+var dPs = __webpack_require__(50);
+var enumBugKeys = __webpack_require__(22);
+var IE_PROTO = __webpack_require__(14)('IE_PROTO');
 var Empty = function () { /* empty */ };
 var PROTOTYPE = 'prototype';
 
 // Create object with fake `null` prototype: use iframe Object with cleared prototype
 var createDict = function () {
   // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(21)('iframe');
+  var iframe = __webpack_require__(17)('iframe');
   var i = enumBugKeys.length;
   var lt = '<';
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(55).appendChild(iframe);
+  __webpack_require__(58).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -2158,14 +2005,14 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 47 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(14);
+var dP = __webpack_require__(10);
 var anObject = __webpack_require__(8);
-var getKeys = __webpack_require__(48);
+var getKeys = __webpack_require__(51);
 
-module.exports = __webpack_require__(4) ? Object.defineProperties : function defineProperties(O, Properties) {
+module.exports = __webpack_require__(3) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var keys = getKeys(Properties);
   var length = keys.length;
@@ -2177,12 +2024,12 @@ module.exports = __webpack_require__(4) ? Object.defineProperties : function def
 
 
 /***/ }),
-/* 48 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(49);
-var enumBugKeys = __webpack_require__(26);
+var $keys = __webpack_require__(52);
+var enumBugKeys = __webpack_require__(22);
 
 module.exports = Object.keys || function keys(O) {
   return $keys(O, enumBugKeys);
@@ -2190,13 +2037,13 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
-/* 49 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(17);
-var toIObject = __webpack_require__(16);
-var arrayIndexOf = __webpack_require__(50)(false);
-var IE_PROTO = __webpack_require__(18)('IE_PROTO');
+var has = __webpack_require__(13);
+var toIObject = __webpack_require__(12);
+var arrayIndexOf = __webpack_require__(53)(false);
+var IE_PROTO = __webpack_require__(14)('IE_PROTO');
 
 module.exports = function (object, names) {
   var O = toIObject(object);
@@ -2213,14 +2060,14 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 50 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
-var toIObject = __webpack_require__(16);
-var toLength = __webpack_require__(51);
-var toAbsoluteIndex = __webpack_require__(52);
+var toIObject = __webpack_require__(12);
+var toLength = __webpack_require__(54);
+var toAbsoluteIndex = __webpack_require__(55);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -2242,11 +2089,11 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 51 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(25);
+var toInteger = __webpack_require__(21);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -2254,10 +2101,10 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 52 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(25);
+var toInteger = __webpack_require__(21);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -2267,7 +2114,7 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 53 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(7);
@@ -2279,7 +2126,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, exports) {
 
 var id = 0;
@@ -2290,7 +2137,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(7).document;
@@ -2298,28 +2145,28 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 56 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(57), __esModule: true };
+module.exports = { "default": __webpack_require__(60), __esModule: true };
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(58);
-module.exports = __webpack_require__(3).Object.getPrototypeOf;
+__webpack_require__(61);
+module.exports = __webpack_require__(2).Object.getPrototypeOf;
 
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
-var toObject = __webpack_require__(27);
-var $getPrototypeOf = __webpack_require__(59);
+var toObject = __webpack_require__(23);
+var $getPrototypeOf = __webpack_require__(62);
 
-__webpack_require__(60)('getPrototypeOf', function () {
+__webpack_require__(63)('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
   };
@@ -2327,13 +2174,13 @@ __webpack_require__(60)('getPrototypeOf', function () {
 
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(17);
-var toObject = __webpack_require__(27);
-var IE_PROTO = __webpack_require__(18)('IE_PROTO');
+var has = __webpack_require__(13);
+var toObject = __webpack_require__(23);
+var IE_PROTO = __webpack_require__(14)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -2346,13 +2193,13 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // most Object methods by ES6 should accept primitives
 var $export = __webpack_require__(6);
-var core = __webpack_require__(3);
-var fails = __webpack_require__(15);
+var core = __webpack_require__(2);
+var fails = __webpack_require__(11);
 module.exports = function (KEY, exec) {
   var fn = (core.Object || {})[KEY] || Object[KEY];
   var exp = {};
@@ -2362,10 +2209,158 @@ module.exports = function (KEY, exec) {
 
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports) {
 
 module.exports = window.ReactDOM;
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = EditSpriteSymbolComponent;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return symbolData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+
+
+
+var symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
+    "id": "edit",
+    "use": "edit-usage",
+    "viewBox": "0 0 34 32",
+    "content": "<symbol viewBox=\"0 0 34 32\" id=\"edit\"><path d=\"M28.5,32h-23C3.6,32,2,30.4,2,28.5v-25C2,1.6,3.6,0,5.5,0h15C21.3,0,22,0.7,22,1.5S21.3,3,20.5,3h-15\tC5.2,3,5,3.2,5,3.5v25C5,28.8,5.2,29,5.5,29h23c0.3,0,0.5-0.2,0.5-0.5v-17c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v17\tC32,30.4,30.4,32,28.5,32z\" /><path d=\"M13,20.5c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l17-17c0.6-0.6,1.5-0.6,2.1,0s0.6,1.5,0,2.1l-17,17\tC13.8,20.4,13.4,20.5,13,20.5z\" /></symbol>"
+});
+__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
+function EditSpriteSymbolComponent(props) {
+    var newProps = {};
+    if (props.className !== undefined) {
+        newProps.className = props.className;
+    }
+    for (var i in props) {
+        if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
+            newProps[i] = props[i];
+        }
+    }
+    return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg', newProps, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#edit' }));
+};
+var symbolData = symbol;
+
+/***/ }),
+/* 66 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = GearSpriteSymbolComponent;
+/* unused harmony export symbolData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+
+
+
+var symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
+    "id": "gear",
+    "use": "gear-usage",
+    "viewBox": "0 0 34 34",
+    "content": "<symbol viewBox=\"0 0 34 34\" id=\"gear\"><path d=\"M17,23c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S20.3,23,17,23z M17,14c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3\tS18.7,14,17,14z\" /><path d=\"M22,33L22,33c-1.3,0-2.4-0.6-3.1-1.7c-0.4-0.6-1.1-1-1.9-1s-1.5,0.4-1.9,1C14.4,32.4,13.3,33,12,33\tc-0.5,0-1-0.1-1.4-0.3c-1.5-0.6-2.9-1.4-4.1-2.4c-1.4-1.1-1.8-3-0.9-4.5c0.4-0.7,0.4-1.5,0-2.2c-0.4-0.7-1.1-1.1-1.8-1.1\tc-1.8-0.1-3.2-1.4-3.5-3C0.1,18.7,0,17.8,0,17s0.1-1.7,0.2-2.5c0.3-1.7,1.7-3,3.5-3c0.8,0,1.5-0.4,1.8-1.1c0.4-0.7,0.4-1.5,0-2.2\tC4.7,6.7,5.1,4.8,6.5,3.7c1.3-1,2.6-1.8,4.1-2.4C11,1.1,11.5,1,12,1c1.3,0,2.4,0.6,3.1,1.7c0.4,0.6,1.1,1,1.9,1s1.5-0.4,1.9-1\tC19.6,1.6,20.7,1,22,1c0.5,0,1,0.1,1.4,0.3c1.5,0.6,2.9,1.4,4.1,2.4c1.4,1.1,1.8,3,0.9,4.5c-0.4,0.7-0.4,1.5,0,2.2\tc0.4,0.7,1.1,1.1,1.8,1.1c1.8,0.1,3.2,1.4,3.5,3c0.1,0.8,0.2,1.7,0.2,2.5s-0.1,1.7-0.2,2.5c-0.3,1.7-1.7,3-3.5,3\tc-0.8,0-1.5,0.4-1.8,1.1c-0.4,0.7-0.4,1.5,0,2.2c0.8,1.5,0.4,3.4-0.9,4.5c-1.3,1-2.6,1.8-4.1,2.4C23,32.9,22.5,33,22,33z M17,27.3\tc1.8,0,3.4,0.9,4.4,2.4c0.2,0.3,0.5,0.4,0.9,0.3c1.2-0.5,2.4-1.2,3.4-2c0.2-0.2,0.3-0.5,0.2-0.7c-0.9-1.6-0.9-3.5,0-5.1\tc0.9-1.6,2.5-2.5,4.3-2.6c0.3,0,0.6-0.2,0.7-0.5c0.1-0.7,0.2-1.4,0.2-2s-0.1-1.4-0.2-2c0-0.3-0.3-0.5-0.7-0.5\tc-1.8-0.1-3.4-1-4.3-2.6c-0.9-1.6-0.9-3.5,0-5.1C26,6.5,25.9,6.2,25.7,6c-1-0.8-2.2-1.5-3.4-2c-0.3-0.1-0.7,0-0.9,0.3\tc-1,1.5-2.6,2.4-4.4,2.4s-3.4-0.9-4.4-2.4C12.4,4,12,3.9,11.7,4.1c-1.2,0.5-2.4,1.2-3.4,2C8.1,6.2,8,6.5,8.2,6.7\tc0.9,1.6,0.9,3.5,0,5.1c-0.9,1.6-2.5,2.5-4.3,2.6c-0.3,0-0.6,0.2-0.7,0.5C3.1,15.6,3,16.3,3,17s0.1,1.4,0.2,2c0,0.3,0.3,0.5,0.7,0.5\tc1.8,0.1,3.4,1,4.3,2.6c0.9,1.6,0.9,3.5,0,5.1C8,27.5,8.1,27.8,8.3,28c1,0.8,2.2,1.5,3.4,2c0.3,0.1,0.7,0,0.9-0.3\tC13.6,28.2,15.2,27.3,17,27.3z\" /></symbol>"
+});
+__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
+function GearSpriteSymbolComponent(props) {
+    var newProps = {};
+    if (props.className !== undefined) {
+        newProps.className = props.className;
+    }
+    for (var i in props) {
+        if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
+            newProps[i] = props[i];
+        }
+    }
+    return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg', newProps, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#gear' }));
+};
+var symbolData = symbol;
+
+/***/ }),
+/* 67 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = InfoSpriteSymbolComponent;
+/* unused harmony export symbolData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+
+
+
+var symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
+    "id": "info",
+    "use": "info-usage",
+    "viewBox": "0 0 34 34",
+    "content": "<symbol viewBox=\"0 0 34 34\" id=\"info\"><path d=\"M17,34C7.6,34,0,26.4,0,17S7.6,0,17,0s17,7.6,17,17S26.4,34,17,34z M17,3C9.3,3,3,9.3,3,17s6.3,14,14,14\ts14-6.3,14-14S24.7,3,17,3z\" /><path d=\"M17 12L17 12c-.8 0-1.5-.7-1.5-1.5v-1C15.5 8.7 16.2 8 17 8h0c.8 0 1.5.7 1.5 1.5v1C18.5 11.3 17.8 12 17 12zM17 26L17 26c-.8 0-1.5-.7-1.5-1.5v-9c0-.8.7-1.5 1.5-1.5h0c.8 0 1.5.7 1.5 1.5v9C18.5 25.3 17.8 26 17 26z\" /></symbol>"
+});
+__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
+function InfoSpriteSymbolComponent(props) {
+    var newProps = {};
+    if (props.className !== undefined) {
+        newProps.className = props.className;
+    }
+    for (var i in props) {
+        if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
+            newProps[i] = props[i];
+        }
+    }
+    return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg', newProps, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#info' }));
+};
+var symbolData = symbol;
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = SearchSpriteSymbolComponent;
+/* unused harmony export symbolData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+
+
+
+var symbol = new __WEBPACK_IMPORTED_MODULE_0_svg_baker_runtime_browser_symbol___default.a({
+    "id": "search",
+    "use": "search-usage",
+    "viewBox": "0 0 28 28",
+    "content": "<symbol viewBox=\"0 0 28 28\" id=\"search\"><path d=\"M27.6,25.4l-4.4-4.4c1.8-2.2,2.8-5,2.8-8.1c0-7.2-5.8-13-13-13C5.8,0,0,5.8,0,13c0,7.2,5.8,13,13,13\tc3,0,5.8-1.1,8.1-2.8l4.4,4.4c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4C28.1,27,28.1,26,27.6,25.4z M3,13C3,7.5,7.5,3,13,3\tc5.5,0,10,4.5,10,10c0,5.5-4.5,10-10,10C7.5,23,3,18.5,3,13z\" /></symbol>"
+});
+__WEBPACK_IMPORTED_MODULE_1_svg_sprite_loader_runtime_browser_sprite_build___default.a.add(symbol);
+function SearchSpriteSymbolComponent(props) {
+    var newProps = {};
+    if (props.className !== undefined) {
+        newProps.className = props.className;
+    }
+    for (var i in props) {
+        if (i !== 'className' && Object.prototype.hasOwnProperty.call(props, i)) {
+            newProps[i] = props[i];
+        }
+    }
+    return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('svg', newProps, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('use', { xlinkHref: '#search' }));
+};
+var symbolData = symbol;
 
 /***/ })
 /******/ ]);
