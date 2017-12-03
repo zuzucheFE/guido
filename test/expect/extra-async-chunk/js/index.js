@@ -151,7 +151,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // a chunks with a, b, c
-Promise.all/* require */([__webpack_require__.e(0), __webpack_require__.e(2)]).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0), __webpack_require__(1), __webpack_require__(3)]; (function (a, b, c) {}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
+Promise.all/* require */([__webpack_require__.e(0), __webpack_require__.e(2)]).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0), __webpack_require__(1), __webpack_require__(3)]; ((function (a, b, c) {}).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
 
 // a chunk with a, b, d
 Promise.all/* require.ensure */([__webpack_require__.e(0), __webpack_require__.e(1)]).then((function (require) {
