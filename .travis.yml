@@ -14,5 +14,9 @@ os:
   - osx
   - linux
 
+osx_image:
+ - xcode9.1
+ - xcode8.3
+
 script: npm run travis:test
 
