@@ -8,13 +8,10 @@ branches:
 
 node_js:
   - "8"
-  - "6"
 
 os:
   - osx
   - linux
-
-#osx_image: xcode9.1
 
 script: npm run travis:test
 
