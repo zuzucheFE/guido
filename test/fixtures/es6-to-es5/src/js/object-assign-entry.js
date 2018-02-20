@@ -11,3 +11,6 @@ let c = objectMerge(a, b);
 alert(JSON.stringify(a));
 alert(JSON.stringify(b));
 alert(JSON.stringify(c));
+
+let r = Object.assign({}, {name: 'kidney'});
+alert(r.name);

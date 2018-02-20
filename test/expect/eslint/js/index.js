@@ -60,39 +60,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 66);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ 66:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__combine_default_param__ = __webpack_require__(67);
-
-alert(Object(__WEBPACK_IMPORTED_MODULE_0__combine_default_param__["a" /* default */])({
-    bar: 'yay'
-}));
-
-/***/ }),
-
-/***/ 67:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = combineDefaultParam;
-function combineDefaultParam() {
-                                                var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-                                                    _ref$bar = _ref.bar,
-                                                    bar = _ref$bar === undefined ? 'no' : _ref$bar,
-                                                    _ref$baz = _ref.baz,
-                                                    baz = _ref$baz === undefined ? 'works!' : _ref$baz;
-
-                                                return bar + ', ' + baz;
-}
+throw new Error("Module build failed: Module failed because of a eslint error.\n\n\u001b[4m/Users/kidney/Work/guido/test/fixtures/eslint/src/js/index.js\u001b[24m\n  \u001b[2m1:12\u001b[22m  \u001b[31merror\u001b[39m  Missing semicolon  \u001b[2msemi\u001b[22m\n  \u001b[2m2:12\u001b[22m  \u001b[31merror\u001b[39m  Missing semicolon  \u001b[2msemi\u001b[22m\n\n\u001b[31m\u001b[1m✖ 2 problems (2 errors, 0 warnings)\u001b[22m\u001b[39m\n\u001b[31m\u001b[1m\u001b[22m\u001b[39m\u001b[31m\u001b[1m  2 errors, 0 warnings potentially fixable with the `--fix` option.\u001b[22m\u001b[39m\n\u001b[31m\u001b[1m\u001b[22m\u001b[39m");
 
 /***/ })
-
-/******/ });
+/******/ ]);

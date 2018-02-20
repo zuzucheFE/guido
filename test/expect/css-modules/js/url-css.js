@@ -96,13 +96,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  'div',
-  { className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css___default.a.page },
-  'Hi'
-), document.getElementById('J-page'));
+Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+  className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_css___default.a.page
+}, "Hi"), document.getElementById('J-page'));
 
 /***/ }),
 /* 9 */

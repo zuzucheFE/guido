@@ -76,11 +76,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_require__(1);
 
 
-document.getElementById('js-facebook').style.backgroundImage = 'url(' + __WEBPACK_IMPORTED_MODULE_0__images_facebook_svg___default.a + ')';
+document.getElementById('js-facebook').style.backgroundImage = "url(".concat(__WEBPACK_IMPORTED_MODULE_0__images_facebook_svg___default.a, ")");
 
-
-document.getElementById('js-twitter').style.backgroundImage = 'url(' + __WEBPACK_IMPORTED_MODULE_1__images_twitter_svg_url___default.a + ')';
-
+document.getElementById('js-twitter').style.backgroundImage = "url(".concat(__WEBPACK_IMPORTED_MODULE_1__images_twitter_svg_url___default.a, ")");
 console.log('svg url done.');
 
 /***/ }),

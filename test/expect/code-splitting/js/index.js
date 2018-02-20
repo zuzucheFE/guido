@@ -78,7 +78,7 @@
 /******/ 		// start chunk loading
 /******/ 		var head = document.getElementsByTagName('head')[0];
 /******/ 		var script = document.createElement('script');
-/******/ 		script.type = 'text/javascript';
+/******/ 		script.type = "text/javascript";
 /******/ 		script.charset = 'utf-8';
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
@@ -152,7 +152,7 @@
 console.log('I am component B.');
 
 exports.xyz = function () {
-    console.log('I am function xyz from component B.');
+  console.log('I am function xyz from component B.');
 };
 
 /***/ }),
@@ -160,10 +160,13 @@ exports.xyz = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var a = __webpack_require__(2);
+
 var b = __webpack_require__(0);
+
 __webpack_require__.e/* require.ensure */(0).then((function (require) {
-    __webpack_require__(0).xyz();
-    var d = __webpack_require__(4);
+  __webpack_require__(0).xyz();
+
+  var d = __webpack_require__(4);
 }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 
 /***/ }),

@@ -49,8 +49,8 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
                 if ('.png|.jpeg|.jpg|.gif'.indexOf(path.extname(file)) === -1) {
                     let outputFile = readFile(path.join(outputDir, file));
                     let expectFile = readFile(path.join(expectDir, file));
-                    outputFile = filterBase64(outputFile);
-                    expectFile = filterBase64(expectFile);
+                    outputFile = filterBase64(outputFile).replace(/[\n\r\s]+/g, '');
+                    expectFile = filterBase64(expectFile).replace(/[\n\r\s]+/g, '');
                     expect(outputFile).to.equal(expectFile);
                 }
             });

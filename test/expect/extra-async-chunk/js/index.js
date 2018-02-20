@@ -78,7 +78,7 @@
 /******/ 		// start chunk loading
 /******/ 		var head = document.getElementsByTagName('head')[0];
 /******/ 		var script = document.createElement('script');
-/******/ 		script.type = 'text/javascript';
+/******/ 		script.type = "text/javascript";
 /******/ 		script.charset = 'utf-8';
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
@@ -151,12 +151,13 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // a chunks with a, b, c
-Promise.all/* require */([__webpack_require__.e(0), __webpack_require__.e(2)]).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0), __webpack_require__(1), __webpack_require__(3)]; ((function (a, b, c) {}).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
+Promise.all/* require */([__webpack_require__.e(0), __webpack_require__.e(2)]).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(0), __webpack_require__(1), __webpack_require__(3)]; ((function (a, b, c) {}).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe); // a chunk with a, b, d
 
-// a chunk with a, b, d
+
 Promise.all/* require.ensure */([__webpack_require__.e(0), __webpack_require__.e(1)]).then((function (require) {
-    __webpack_require__(1);
-    __webpack_require__(4);
+  __webpack_require__(1);
+
+  __webpack_require__(4);
 }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 
 /***/ })

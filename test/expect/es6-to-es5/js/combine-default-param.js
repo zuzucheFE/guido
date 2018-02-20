@@ -60,37 +60,37 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 66);
+/******/ 	return __webpack_require__(__webpack_require__.s = 94);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 66:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__combine_default_param__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__combine_default_param__ = __webpack_require__(95);
 
 alert(Object(__WEBPACK_IMPORTED_MODULE_0__combine_default_param__["a" /* default */])({
-    bar: 'yay'
+  bar: 'yay'
 }));
 
 /***/ }),
 
-/***/ 67:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = combineDefaultParam;
 function combineDefaultParam() {
-                                                var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-                                                    _ref$bar = _ref.bar,
-                                                    bar = _ref$bar === undefined ? 'no' : _ref$bar,
-                                                    _ref$baz = _ref.baz,
-                                                    baz = _ref$baz === undefined ? 'works!' : _ref$baz;
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$bar = _ref.bar,
+      bar = _ref$bar === void 0 ? 'no' : _ref$bar,
+      _ref$baz = _ref.baz,
+      baz = _ref$baz === void 0 ? 'works!' : _ref$baz;
 
-                                                return bar + ', ' + baz;
+  return "".concat(bar, ", ").concat(baz);
 }
 
 /***/ })

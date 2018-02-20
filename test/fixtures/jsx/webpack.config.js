@@ -3,12 +3,16 @@ module.exports = {
         index: './src/js/index.jsx'
     },
 
+    output: {
+        // libraryTarget: 'commonjs'
+    },
+
     externals: [{
         'react': {
             root: 'window.React',
             var: 'window.React',
-            commonjs2: 'react',
             commonjs: 'react',
+            commonjs2: 'react',
             amd: 'react',
             umd: 'react'
         },
@@ -16,8 +20,8 @@ module.exports = {
         'react-dom': {
             root: 'window.ReactDOM',
             var: 'window.ReactDOM',
-            commonjs2: 'react-dom',
             commonjs: 'react-dom',
+            commonjs2: 'react-dom',
             amd: 'react-dom',
             umd: 'react-dom'
         }

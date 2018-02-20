@@ -186,7 +186,7 @@ module.exports = function (it) {
 /* 9 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.1' };
+var core = module.exports = { version: '2.5.3' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -239,33 +239,35 @@ module.exports = function (key) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = add;
 /* harmony export (immutable) */ __webpack_exports__["b"] = multiply;
 /* unused harmony export list */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_array_from__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_array_from__);
 
 function add() {
-    var sum = 0,
-        i = 0,
-        args = arguments,
-        l = args.length;
-    while (i < l) {
-        sum += args[i++];
-    }
-    return sum;
-}
+  var sum = 0,
+      i = 0,
+      args = arguments,
+      l = args.length;
 
+  while (i < l) {
+    sum += args[i++];
+  }
+
+  return sum;
+}
 function multiply() {
-    var product = 1,
-        i = 0,
-        args = arguments,
-        l = args.length;
-    while (i < l) {
-        product *= args[i++];
-    }
-    return product;
-}
+  var product = 1,
+      i = 0,
+      args = arguments,
+      l = args.length;
 
+  while (i < l) {
+    product *= args[i++];
+  }
+
+  return product;
+}
 function list() {
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arguments);
+  return __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_array_from___default()(arguments);
 }
 
 /***/ }),
@@ -489,7 +491,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__library__ = __webpack_require__(55);
 
 
-
 alert(Object(__WEBPACK_IMPORTED_MODULE_0__math__["a" /* add */])(1, 2));
 alert(__WEBPACK_IMPORTED_MODULE_1__library__["a" /* reexportedMultiply */](1, 2));
 
@@ -497,7 +498,7 @@ alert(__WEBPACK_IMPORTED_MODULE_1__library__["a" /* reexportedMultiply */](1, 2)
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(29), __esModule: true };
+module.exports = __webpack_require__(29);
 
 /***/ }),
 /* 29 */
@@ -592,7 +593,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = $native || getMethod(DEFAULT);
+  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;

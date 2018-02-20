@@ -78,7 +78,7 @@
 /******/ 		// start chunk loading
 /******/ 		var head = document.getElementsByTagName('head')[0];
 /******/ 		var script = document.createElement('script');
-/******/ 		script.type = 'text/javascript';
+/******/ 		script.type = "text/javascript";
 /******/ 		script.charset = 'utf-8';
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
@@ -150,15 +150,16 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 function getTemplate(templateName, callback) {
-    __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1)("./" + templateName)]; ((function (mods) {
-        callback(mods());
-    }).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
+  __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1)("./" + templateName)]; ((function (mods) {
+    callback(mods());
+  }).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
 }
+
 getTemplate('a', function (a) {
-    console.log(a);
+  console.log(a);
 });
 getTemplate('b', function (b) {
-    console.log(b);
+  console.log(b);
 });
 
 /***/ })

@@ -96,22 +96,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    { className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_scss___default.a.page },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h1',
-        null,
-        'Hi'
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'section',
-        { className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_scss___default.a.box },
-        'box'
-    )
-));
+Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+  className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_scss___default.a.page
+}, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, "Hi"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+  className: __WEBPACK_IMPORTED_MODULE_2__css_style_modules_scss___default.a.box
+}, "box")));
 
 /***/ }),
 /* 9 */

@@ -1,2 +1,2 @@
-import Say from './say';
-Say();
+let a = 'a'
+let b = 'b'

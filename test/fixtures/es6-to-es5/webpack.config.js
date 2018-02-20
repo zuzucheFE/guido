@@ -7,5 +7,8 @@ module.exports = {
         'module-exports-multi': './src/js/module-exports-multi-entry.js',
         'object-assign': './src/js/object-assign-entry.js',
         'promise': './src/js/promise-entry.js',
+        'object-rest-spread': './src/js/object-rest-spread-entry.js',
+        'proposal-class-properties': './src/js/proposal-class-properties.js',
+        'generator-entry': './src/js/generator-entry.js'
     }
 };

@@ -60,41 +60,59 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 123);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 70:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 123:
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_exports_multi__ = __webpack_require__(71);
+var _class, _temp;
 
-Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["b" /* success */])();
-Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["a" /* error */])();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-/***/ }),
+var Bork = (_temp = _class = function Bork() {
+  var _this = this;
 
-/***/ 71:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  _classCallCheck(this, Bork);
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return error; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return success; });
-/* unused harmony export warn */
-var error = function error() {
-    return alert('error');
-};
-var success = function success() {
-    return alert('success');
-};
-var warn = function warn() {
-    return alert('warn');
-};
+  Object.defineProperty(this, "instanceProperty", {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    value: "bork"
+  });
+  Object.defineProperty(this, "boundFunction", {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    value: function value() {
+      return _this.instanceProperty;
+    }
+  });
+}, Object.defineProperty(_class, "staticProperty", {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  value: "babelIsCool"
+}), Object.defineProperty(_class, "staticFunction", {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  value: function value() {
+    return Bork.staticProperty;
+  }
+}), _temp);
+var myBork = new Bork(); //Property initializers are not on the prototype.
 
+console.log(myBork.__proto__.boundFunction); // > undefined
+//Bound functions are bound to the class instance.
 
+console.log(myBork.boundFunction.call(undefined)); // > "bork"
+//Static function exists on the class.
+
+console.log(Bork.staticFunction()); // > "babelIsCool"
 
 /***/ })
 

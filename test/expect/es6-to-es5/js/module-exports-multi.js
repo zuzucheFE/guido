@@ -60,24 +60,24 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 98);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 70:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_exports_multi__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_exports_multi__ = __webpack_require__(99);
 
 Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["b" /* success */])();
 Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["a" /* error */])();
 
 /***/ }),
 
-/***/ 71:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,13 +85,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__module_exports_multi__["a" /* error */])();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return success; });
 /* unused harmony export warn */
 var error = function error() {
-    return alert('error');
+  return alert('error');
 };
+
 var success = function success() {
-    return alert('success');
+  return alert('success');
 };
+
 var warn = function warn() {
-    return alert('warn');
+  return alert('warn');
 };
 
 

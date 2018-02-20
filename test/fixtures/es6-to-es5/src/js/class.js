@@ -3,4 +3,8 @@ export default class Parent {
         alert('Parent constructor');
         this.name = 'kidney';
     }
+
+    say() {
+        alert(this.name);
+    }
 }
