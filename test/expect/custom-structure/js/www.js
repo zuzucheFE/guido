@@ -75,7 +75,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__www_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__www_scss__);
 
 
-
 var $body = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document.body);
 
 /***/ }),

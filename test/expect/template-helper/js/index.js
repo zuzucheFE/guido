@@ -70,17 +70,21 @@
 var tpl = __webpack_require__(1);
 
 var $el = document.getElementById('J-tpl');
-
 $el.innerHTML = tpl({
-    list: [{ "name": "name1" }, { "name": "name2" }, { "name": "name3" }]
+  list: [{
+    "name": "name1"
+  }, {
+    "name": "name2"
+  }, {
+    "name": "name3"
+  }]
 }, {
-    helpers: {
-        toUpperCase: function toUpperCase() {
-            return 'Hi, ' + this.name.toUpperCase();
-        }
+  helpers: {
+    toUpperCase: function toUpperCase() {
+      return 'Hi, ' + this.name.toUpperCase();
     }
+  }
 });
-
 console.log('template-helper done.');
 
 /***/ }),

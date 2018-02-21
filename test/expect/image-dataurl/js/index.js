@@ -73,67 +73,51 @@
 __webpack_require__(1);
 
 var fragment = document.createDocumentFragment();
-
 var aircraft = document.createElement('div');
 aircraft.innerHTML = '<img src="' + __webpack_require__(2) + '">';
 fragment.appendChild(aircraft);
-
 var aircraftInline = document.createElement('div');
 aircraftInline.innerHTML = '<img src="' + __webpack_require__(3) + '">';
 fragment.appendChild(aircraftInline);
-
 var aircraftUrl = document.createElement('div');
 aircraftUrl.innerHTML = '<img src="' + __webpack_require__(4) + '">';
 fragment.appendChild(aircraftUrl);
-
 var buzz = document.createElement('div');
 buzz.innerHTML = '<img src="' + __webpack_require__(5) + '">';
 fragment.appendChild(buzz);
-
 var buzzInline = document.createElement('div');
 buzzInline.innerHTML = '<img src="' + __webpack_require__(6) + '">';
 fragment.appendChild(buzzInline);
-
 var buzzUrl = document.createElement('div');
 buzzUrl.innerHTML = '<img src="' + __webpack_require__(7) + '">';
 fragment.appendChild(buzzUrl);
-
 var woody = document.createElement('div');
 woody.innerHTML = '<img src="' + __webpack_require__(8) + '">';
 fragment.appendChild(woody);
-
 var woodyInline = document.createElement('div');
 woodyInline.innerHTML = '<img src="' + __webpack_require__(9) + '">';
 fragment.appendChild(woodyInline);
-
 var woodyUrl = document.createElement('div');
 woodyUrl.innerHTML = '<img src="' + __webpack_require__(10) + '">';
 fragment.appendChild(woodyUrl);
-
 var arrows = document.createElement('div');
 arrows.innerHTML = '<img src="' + __webpack_require__(11) + '">';
 fragment.appendChild(arrows);
-
 var arrowsInline = document.createElement('div');
 arrowsInline.innerHTML = '<img src="' + __webpack_require__(12) + '">';
 fragment.appendChild(arrowsInline);
-
 var arrowsUrl = document.createElement('div');
 arrowsUrl.innerHTML = '<img src="' + __webpack_require__(13) + '">';
 fragment.appendChild(arrowsUrl);
-
 var p1 = document.createElement('div');
 p1.innerHTML = '<img src="' + __webpack_require__(14) + '">';
 fragment.appendChild(p1);
-
 var p1Inline = document.createElement('div');
 p1Inline.innerHTML = '<img src="' + __webpack_require__(15) + '">';
 fragment.appendChild(p1Inline);
-
 var p1Url = document.createElement('div');
 p1Url.innerHTML = '<img src="' + __webpack_require__(16) + '">';
 fragment.appendChild(p1Url);
-
 document.body.appendChild(fragment);
 
 /***/ }),

@@ -149,11 +149,6 @@ describe('Build', function() {
             env: 'production'
         }, 'production-env');
     });
-    it('verbose-mode', function() {
-        return testBuild({
-            quiet: false
-        }, 'verbose-mode');
-    });
     it('require.context', function() {
         return testBuild({}, 'require.context');
     });
@@ -222,5 +217,13 @@ describe('Build', function() {
     });
     it('template-require-resources', function() {
         return testBuild({}, 'template-require-resources');
+    });
+    it('umd', function() {
+        return testBuild({}, 'umd');
+    });
+    it('verbose-mode', function() {
+        return testBuild({
+            quiet: false
+        }, 'verbose-mode');
     });
 });

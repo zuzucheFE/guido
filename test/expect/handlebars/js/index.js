@@ -103,31 +103,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
 var str = __WEBPACK_IMPORTED_MODULE_1__main_handlebars___default()({
-    data: [{
-        name: 'Eddard'
-    }, {
-        name: 'Sansa'
-    }, {
-        name: 'Bran'
-    }, {
-        name: 'Arya'
-    }, {
-        name: 'Jon Snow'
-    }]
+  data: [{
+    name: 'Eddard'
+  }, {
+    name: 'Sansa'
+  }, {
+    name: 'Bran'
+  }, {
+    name: 'Arya'
+  }, {
+    name: 'Jon Snow'
+  }]
 }, {
-    helpers: {
-        isGuide: function isGuide(options) {
-            return options.fn(this);
-        }
-    },
-
-    partials: {
-        partial2: __WEBPACK_IMPORTED_MODULE_2__partial2_handlebars___default.a
+  helpers: {
+    isGuide: function isGuide(options) {
+      return options.fn(this);
     }
+  },
+  partials: {
+    partial2: __WEBPACK_IMPORTED_MODULE_2__partial2_handlebars___default.a
+  }
 });
-
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document.body).html(str);
 
 /***/ }),

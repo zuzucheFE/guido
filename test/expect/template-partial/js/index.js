@@ -90,14 +90,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 var $el2 = document.getElementById('J-tpl-2');
 
 var tpl2 = __webpack_require__(3);
-var tpl3 = __webpack_require__(1);
-$el2.innerHTML = tpl2({
-    title2: 'title2',
-    title3: 'title3'
-}, {
-    partials: tpl3
-});
 
+var tpl3 = __webpack_require__(1);
+
+$el2.innerHTML = tpl2({
+  title2: 'title2',
+  title3: 'title3'
+}, {
+  partials: tpl3
+});
 console.log('template-partial done.');
 
 /***/ }),

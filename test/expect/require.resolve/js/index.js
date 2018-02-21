@@ -73,18 +73,17 @@ module.exports = Math.random();
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var a = __webpack_require__(0);
+var a = __webpack_require__(0); // get module id
 
-// get module id
-var aId = /*require.resolve*/(0);
 
-// clear module in require.cache
-delete __webpack_require__.c[aId];
+var aId = /*require.resolve*/(0); // clear module in require.cache
 
-// require module again, it should be reexecuted
-var a2 = __webpack_require__(0);
 
-// vertify it
+delete __webpack_require__.c[aId]; // require module again, it should be reexecuted
+
+var a2 = __webpack_require__(0); // vertify it
+
+
 if (a == a2) throw new Error('Cache clear failed :(');
 
 /***/ })
