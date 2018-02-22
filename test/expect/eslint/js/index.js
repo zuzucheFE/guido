@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Module failed because of a eslint error.\n\n\u001b[4m/Users/kidney/Work/guido/test/fixtures/eslint/src/js/index.js\u001b[24m\n  \u001b[2m1:12\u001b[22m  \u001b[31merror\u001b[39m  Missing semicolon  \u001b[2msemi\u001b[22m\n  \u001b[2m2:12\u001b[22m  \u001b[31merror\u001b[39m  Missing semicolon  \u001b[2msemi\u001b[22m\n\n\u001b[31m\u001b[1m✖ 2 problems (2 errors, 0 warnings)\u001b[22m\u001b[39m\n\u001b[31m\u001b[1m\u001b[22m\u001b[39m\u001b[31m\u001b[1m  2 errors, 0 warnings potentially fixable with the `--fix` option.\u001b[22m\u001b[39m\n\u001b[31m\u001b[1m\u001b[22m\u001b[39m");
+var a = function a() {};
 
 /***/ })
 /******/ ]);

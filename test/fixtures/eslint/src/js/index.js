@@ -1,2 +1,3 @@
-let a = 'a'
-let b = 'b'
+let a = function () {
+
+};

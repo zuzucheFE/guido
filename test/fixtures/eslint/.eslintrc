@@ -14,10 +14,13 @@
     }
   },
   "rules": {
-    // 使用分号: 报错级别, 必须
-    "semi": ["error", "always"],
-
-    // 禁止使用eval()
-    "no-eval": "error"
+    // 匿名函数需要空格，命名的不需要
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ]
   }
 }
