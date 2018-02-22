@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "3.6.6",
+  "version": "3.7.0",
   "description": "基于webpack3的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
   "dependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "autoprefixer": "^8.0.0",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.2",
     "babel-loader": "^8.0.0-beta.0",
     "babel-preset-zuzuche": "^1.1.0",
     "bluebird": "^3.5.1",
@@ -41,12 +41,12 @@
     "commander": "^2.14.1",
     "css-loader": "^0.28.9",
     "del": "^3.0.0",
-    "eslint": "^4.18.0",
+    "eslint": "^4.18.1",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-react": "^7.7.0",
     "extend": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
+    "file-loader": "^1.1.8",
     "glob": "^7.1.2",
     "handlebars": "^4.0.11",
     "handlebars-loader": "^1.6.0",
@@ -73,6 +73,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
+    "eslint": "^4.18.1",
     "istanbul": "^0.4.5",
     "mocha": "^5.0.1",
     "mocha-lcov-reporter": "^1.3.0"
