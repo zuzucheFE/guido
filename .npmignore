@@ -9,6 +9,8 @@ test/
 .DS_Store
 .idea
 .editorconfig
+.eslintignore
+.eslintrc
 .gitignore
 .npmrc
 *.yml
