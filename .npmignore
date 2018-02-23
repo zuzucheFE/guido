@@ -13,3 +13,4 @@ test/
 .gitignore
 .npmrc
 *.yml
+package-lock.json

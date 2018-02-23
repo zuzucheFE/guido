@@ -9,3 +9,4 @@
 .guido-cache
 ~*
 /test/fixtures/combo
+package-lock.json
