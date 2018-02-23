@@ -13,23 +13,30 @@ branches:
     - master
 
 node_js:
-  - "8"
-  - "9"
+  - 8
+  - 9
 
 os:
   - osx
   - linux
 
 before_install:
- - 'if [ $TEST_SUITE = "linux"]; then sudo apt-get install libtool automake autoconf nasm; fi'
- - 'if [ $TEST_SUITE = "osx"]; then brew install libpng; fi'
+ - 'if [ $TEST_SUITE = "linux" ]; then sudo apt-get install libtool automake autoconf nasm; fi'
+ - 'if [ $TEST_SUITE = "osx" ]; then brew install libpng; fi'
 
 script: npm run travis:test
 
 matrix:
   include:
     - os: osx
+    - node_js: 8
+      env: TEST_SUITE=osx
+    - os: osx
+    - node_js: 9
       env: TEST_SUITE=osx
     - os: linux
+    - node_js: 8
+      env: TEST_SUITE=linux
+    - node_js: 9
       env: TEST_SUITE=linux
 
