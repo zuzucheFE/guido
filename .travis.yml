@@ -27,7 +27,7 @@ matrix:
       env: TEST_SUITE=linux
 
 before_install:
- - 'if [ "$TEST_SUITE" = "linux" ]; then apt-get install libtool automake autoconf nasm; fi'
+ - 'if [ "$TEST_SUITE" = "linux" ]; then sudo apt-get install libtool automake autoconf nasm; fi'
  - 'if [ "$TEST_SUITE" = "osx" ]; then brew install libpng; fi'
 
 script: npm run travis:test
