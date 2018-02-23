@@ -1,6 +1,12 @@
 sudo: true
 
+dist: trusty
+
 language: node_js
+
+cache:
+  directories:
+  - node_modules
 
 branches:
   only:
@@ -11,10 +17,19 @@ node_js:
   - "9"
 
 os:
+  - osx
   - linux
 
 before_install:
- - sudo apt-get install libtool automake autoconf nasm
+ - 'if [ $TEST_SUITE = "linux"]; then sudo apt-get install libtool automake autoconf nasm; fi'
+ - 'if [ $TEST_SUITE = "osx"]; then brew install libpng; fi'
 
 script: npm run travis:test
+
+matrix:
+  include:
+    - os: osx
+      env: TEST_SUITE=osx
+    - os: linux
+      env: TEST_SUITE=linux
 
