@@ -11,8 +11,10 @@ node_js:
   - "9"
 
 os:
-  - osx
   - linux
+
+before_install:
+ - sudo apt-get install libtool automake autoconf nasm
 
 script: npm run travis:test
 
