@@ -5,16 +5,20 @@
 [![Coveralls branch](https://img.shields.io/coveralls/zuzucheFE/guido/master.svg)](https://coveralls.io/github/zuzucheFE/guido)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kidney/guido/master/LICENSE)
 
-适用于`cmd` `amd` `react` `jquery` `sass` `handlebars`开发体系的构建工具，还内置静态资源（样式、图片）内联外链、自动化雪碧图、资源to base64、资源文件注入模板、dev server等构建、调试、打包部署功能，减少同体系开发环境的重复配置。
+基于webpack4的构建工具的构建工具，还内置静态资源（样式、图片）内联外链、自动化雪碧图、资源to base64、资源文件注入模板、dev server等构建、调试、打包部署功能，减少同体系开发环境的重复配置。
 
-**这是基于webpack3的构建工具**
 
 
 ## 安装 & 使用
 
+> webpack 4.x
 ```shell
-npm install guido -g
-guido -v
+npm install guido --save-dev
+```
+
+> webpack 3.x
+```shell
+npm install guido@3.7.0 --save-dev
 ```
 
 
@@ -41,11 +45,7 @@ guido -v
 
 ## 使用文档
 
-- [快速开始](https://github.com/zuzucheFE/guido/blob/master/docs/get-started.md)
-- [配置](https://github.com/zuzucheFE/guido/blob/master/docs/configuration.md)
-- [CSS Sprite图片合并](https://github.com/zuzucheFE/guido/blob/master/docs/css-images-sprite.md)
-- [资源引用](https://github.com/zuzucheFE/guido/blob/master/docs/resource-reference.md)
-- [本地开发](https://github.com/zuzucheFE/guido/blob/master/docs/dev-server.md)
+todo
 
 
 [![Guido Logo](https://cldup.com/VRIcicgf5s.jpg)](https://github.com/zuzucheFE/guido)
