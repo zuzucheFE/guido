@@ -65,7 +65,7 @@
     "svgo-loader": "^2.1.0",
     "text-table": "^0.2.0",
     "url-loader": "^0.6.2",
-    "webpack": "^4.0.1",
+    "webpack": "^4.1.0",
     "webpack-dev-server": "^3.1.0",
     "webpack-parallel-uglify-plugin": "^1.0.2"
   },
