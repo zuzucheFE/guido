@@ -8,7 +8,7 @@ cache:
 
 branches:
   only:
-    - master
+    - 3.x
 
 matrix:
   fast_finish: true
