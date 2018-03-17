@@ -35,7 +35,7 @@
     "autoprefixer": "^8.1.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^8.0.0-beta.2",
-    "babel-preset-zuzuche": "^1.1.3",
+    "babel-preset-zuzuche": "^1.1.4",
     "bluebird": "^3.5.1",
     "chalk": "^2.3.2",
     "commander": "^2.15.0",
