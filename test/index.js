@@ -68,7 +68,7 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
 
 
 describe('Build', function() {
-    this.timeout(20000);
+    this.timeout(200000);
 
     it('browserslist', function() {
         return testBuild({}, 'browserslist');

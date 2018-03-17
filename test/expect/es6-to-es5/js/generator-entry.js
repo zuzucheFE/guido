@@ -60,22 +60,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 124);
+/******/ 	return __webpack_require__(__webpack_require__.s = 132);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 124:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 132:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var _regeneratorRuntime = __webpack_require__(125);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_regenerator__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_regenerator__);
+
 
 var _marked =
 /*#__PURE__*/
-_regeneratorRuntime.mark(gen);
+__WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_regenerator___default.a.mark(gen);
 
 function gen() {
-  return _regeneratorRuntime.wrap(function gen$(_context) {
+  return __WEBPACK_IMPORTED_MODULE_0__Users_kidney_Work_guido_node_modules_babel_runtime_regenerator___default.a.wrap(function gen$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
@@ -101,15 +105,15 @@ console.log(g.next());
 
 /***/ }),
 
-/***/ 125:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(126);
+module.exports = __webpack_require__(134);
 
 
 /***/ }),
 
-/***/ 126:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -134,7 +138,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(127);
+module.exports = __webpack_require__(135);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -151,7 +155,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 127:
+/***/ 135:
 /***/ (function(module, exports) {
 
 /**

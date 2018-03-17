@@ -360,7 +360,7 @@ function createCommonjsModule(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
-var index = createCommonjsModule(function (module, exports) {
+var deepmerge = createCommonjsModule(function (module, exports) {
 (function (root, factory) {
     if (false) {
         undefined(factory);
@@ -545,7 +545,7 @@ defaultAttrs[xlink.name] = xlink.uri;
 var wrapInSvgString = function (content, attributes) {
   if ( content === void 0 ) content = '';
 
-  var attrs = index(defaultAttrs, attributes || {});
+  var attrs = deepmerge(defaultAttrs, attributes || {});
   var attrsRendered = objectToAttrsString(attrs);
   return ("<svg " + attrsRendered + ">" + content + "</svg>");
 };
@@ -561,7 +561,7 @@ var defaultConfig = {
 var obj;
 
 var Sprite = function Sprite(config) {
-  this.config = index(defaultConfig, config || {});
+  this.config = deepmerge(defaultConfig, config || {});
   this.symbols = [];
 };
 
@@ -1028,7 +1028,7 @@ var BrowserSprite = (function (Sprite$$1) {
     var this$1 = this;
     if ( cfg === void 0 ) cfg = {};
 
-    Sprite$$1.call(this, index(defaultConfig$1, cfg));
+    Sprite$$1.call(this, deepmerge(defaultConfig$1, cfg));
 
     var emitter = mitt();
     this._emitter = emitter;
@@ -2089,7 +2089,9 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3__Users_kidney_Work_guido_node_modules_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
 
