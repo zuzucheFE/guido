@@ -1,6 +1,7 @@
-/test/fixtures/**/dist
 /coverage
+/examples/**/dist
 /node_modules
+/test/fixtures/**/dist
 *.log
 .vscode
 .DS_Store
@@ -8,5 +9,4 @@
 .npmrc
 .guido-cache
 ~*
-/test/fixtures/combo
 package-lock.json
