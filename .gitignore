@@ -1,5 +1,6 @@
 /coverage
 /examples/**/dist
+/examples/**/.cache
 /node_modules
 /test/fixtures/**/dist
 *.log
