@@ -134,7 +134,7 @@ function createCommonjsModule(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
-var index = createCommonjsModule(function (module, exports) {
+var deepmerge = createCommonjsModule(function (module, exports) {
 (function (root, factory) {
     if (false) {
         undefined(factory);
@@ -261,7 +261,7 @@ defaultAttrs[xlink.name] = xlink.uri;
 var wrapInSvgString = function (content, attributes) {
   if ( content === void 0 ) content = '';
 
-  var attrs = index(defaultAttrs, attributes || {});
+  var attrs = deepmerge(defaultAttrs, attributes || {});
   var attrsRendered = objectToAttrsString(attrs);
   return ("<svg " + attrsRendered + ">" + content + "</svg>");
 };
@@ -339,7 +339,7 @@ return BrowserSpriteSymbol;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
 
@@ -1349,11 +1349,11 @@ return sprite$1;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
 
-/***/ 12:
+/***/ 11:
 /***/ (function(module, exports) {
 
 var g;
