@@ -19,7 +19,7 @@ function filterBase64(str) {
         .replace(/data:application\/json;charset=utf-8;base64,[a-zA-Z0-9=\+\/,;]+/g, '');
 }
 
-const REG_BABEL_RUNTIME_CORE = /(__WEBPACK_IMPORTED_MODULE_\d+_)[A-Za-z0-9_]+(_babel_runtime_core_js)/g;
+const REG_BABEL_RUNTIME_CORE = /(__WEBPACK_IMPORTED_MODULE_\d+_)[A-Za-z0-9_]+(_babel_runtime_)/g;
 function testBuild(webpackConfig, fixtureDir, options = {}) {
     return new Promise(function(resolve, reject) {
         const cwd = path.join(__dirname, 'fixtures', fixtureDir);
@@ -53,8 +53,8 @@ function testBuild(webpackConfig, fixtureDir, options = {}) {
                     outputFile = filterBase64(outputFile).replace(/[\n\r\s]+/g, '');
                     expectFile = filterBase64(expectFile).replace(/[\n\r\s]+/g, '');
 
-                    outputFile = outputFile.replace(REG_BABEL_RUNTIME_CORE, '');
-                    expectFile = expectFile.replace(REG_BABEL_RUNTIME_CORE, '');
+                    outputFile = outputFile.replace(REG_BABEL_RUNTIME_CORE, '$1$2');
+                    expectFile = expectFile.replace(REG_BABEL_RUNTIME_CORE, '$1$2');
                     expect(outputFile).to.equal(expectFile);
                 }
             });
