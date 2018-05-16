@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/guido.svg)](https://www.npmjs.com/package/guido)
 [![Travis branch](https://img.shields.io/travis/zuzucheFE/guido/3.x.svg)](https://travis-ci.org/zuzucheFE/guido)
-[![Coveralls branch](https://img.shields.io/coveralls/zuzucheFE/guido/master.svg)](https://coveralls.io/github/zuzucheFE/guido)
+[![Coveralls branch](https://img.shields.io/coveralls/zuzucheFE/guido/3.x.svg)](https://coveralls.io/github/zuzucheFE/guido)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kidney/guido/master/LICENSE)
 
 适用于`cmd` `amd` `react` `jquery` `sass` `handlebars`开发体系的构建工具，还内置静态资源（样式、图片）内联外链、自动化雪碧图、资源to base64、资源文件注入模板、dev server等构建、调试、打包部署功能，减少同体系开发环境的重复配置。
