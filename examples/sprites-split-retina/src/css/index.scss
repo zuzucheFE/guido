@@ -1,0 +1,46 @@
+.page {
+  .icon-level-1 {
+    margin: 0 5px 0 0;
+    background: url(../images/sp1/level-1.png?__sprite) no-repeat;
+  }
+  .icon-level-2 {
+    margin: 0 5px 0 0;
+    background: url(../images/sp1/level-2.png?__sprite) no-repeat;
+  }
+  .icon-level-3 {
+    margin: 0 5px 0 0;
+    background: url(../images/sp1/level-3.png?__sprite) no-repeat;
+  }
+  .icon-level-4 {
+    margin: 0 5px 0 0;
+    background: url(../images/sp2/level-4.png?__sprite) no-repeat;
+  }
+  .icon-level-5 {
+    margin: 0 5px 0 0;
+    background: url(../images/sp2/level-5.png?__sprite) no-repeat;
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    .icon-level-1 {
+      background: url(../images/sp1/level-1@2x.png?__sprite) no-repeat;
+    }
+    .icon-level-2 {
+      background: url(../images/sp1/level-2@2x.png?__sprite) no-repeat;
+    }
+    .icon-level-3 {
+      background: url(../images/sp1/level-3@2x.png?__sprite) no-repeat;
+    }
+    .icon-level-4 {
+      background: url(../images/sp2/level-4@2x.png?__sprite) no-repeat;
+    }
+    .icon-level-5 {
+      background: url(../images/sp2/level-5@2x.png?__sprite) no-repeat;
+    }
+  }
+}
