@@ -14,7 +14,6 @@
 
 ```shell
 npm install guido --save-dev
-guido -v
 ```
 
 
