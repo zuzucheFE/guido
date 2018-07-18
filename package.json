@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "3.7.4",
+  "version": "3.7.5",
   "description": "基于webpack3的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
@@ -31,11 +31,11 @@
   },
   "main": "lib/guido.js",
   "dependencies": {
-    "@babel/core": "7.0.0-beta.53",
+    "@babel/core": "7.0.0-beta.47",
     "autoprefixer": "8.6.5",
     "babel-eslint": "8.2.6",
     "babel-loader": "8.0.0-beta.4",
-    "babel-preset-zuzuche": "1.1.10",
+    "babel-preset-zuzuche": "1.1.12",
     "bluebird": "3.5.1",
     "chalk": "2.4.1",
     "commander": "2.16.0",
