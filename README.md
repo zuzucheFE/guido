@@ -13,8 +13,7 @@
 ## 安装 & 使用
 
 ```shell
-npm install guido -g
-guido -v
+npm install guido --save-dev
 ```
 
 
