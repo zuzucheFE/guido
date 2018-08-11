@@ -1,0 +1,8 @@
+# Ignore all paths.
+**/*.*
+
+# Enable prettier for the following paths.
+!lib/**/*.js
+!bin/*.js
+!test/*.js
+!examples/**/webpack.config.js
