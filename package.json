@@ -52,7 +52,7 @@
     "happypack": "4.0.1",
     "html-webpack-plugin-for-multihtml": "2.30.2",
     "image-webpack-loader": "4.3.1",
-    "node-sass": "4.9.2",
+    "node-sass": "4.9.3",
     "postcss-iconfont": "1.0.1",
     "postcss-loader": "2.1.6",
     "postcss-sprites": "4.2.1",
