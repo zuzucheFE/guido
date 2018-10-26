@@ -2,17 +2,21 @@
 
 'use strict';
 
+process.on('unhandledRejection', err => {
+    throw err;
+});
+
 const spawn = require('cross-spawn');
 const chalk = require('chalk');
 
-const script = process.argv.slice(2);
-
+const script = process.argv.slice(2)[0];
 if (script === 'build' || script === 'start') {
     const result = spawn.sync(
         'node',
-        require.resolve('../scripts/' + script),
+        [require.resolve('../lib/scripts/' + script)],
         {stdio: 'inherit'}
     );
+
     if (result.signal) {
         if (result.signal === 'SIGKILL') {
             console.log(chalk.red('内存不足或调用了 `kill -9`，导致进程已退出。'));
