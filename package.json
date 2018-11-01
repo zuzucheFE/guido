@@ -38,6 +38,7 @@
   "main": "lib/guido.js",
   "dependencies": {
     "@babel/core": "7.1.2",
+    "address": "^1.0.3",
     "autoprefixer": "9.3.1",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.4",
