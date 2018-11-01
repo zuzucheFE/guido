@@ -8,6 +8,5 @@
 .DS_Store
 .idea
 .npmrc
-.guido-cache
 ~*
 package-lock.json
