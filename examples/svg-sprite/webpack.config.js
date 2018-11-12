@@ -1,16 +1,18 @@
 module.exports = {
-    mode: 'development',
+	// mode: 'development',
 
-    entry: {
-        index: './src/js/index.js',
-        'app-index': './src/js/app-index.js'
-    },
+	entry: {
+		index: './src/js/index.js',
+		'app-index': './src/js/app-index.js',
+	},
 
-    output: {
-        publicPath: '../'
-    },
-    externals: {
-        react: 'window.React',
-        'react-dom': 'window.ReactDOM'
-    }
+	output: {
+		publicPath: '../',
+		filename: 'js/[name].js',
+		chunkFilename: 'js/[name]-chunk.js',
+	},
+	externals: {
+		react: 'window.React',
+		'react-dom': 'window.ReactDOM',
+	},
 };
