@@ -16,13 +16,6 @@
 npm install guido --save-dev
 ```
 
-> webpack 3.x
-```shell
-npm install guido@3.7.0 --save-dev
-```
-
-
-
 ## 特性
 
 - [x] 模块化
