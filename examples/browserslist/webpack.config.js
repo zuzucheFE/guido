@@ -1,15 +1,15 @@
+'use strict';
+
 module.exports = {
-    mode: 'development',
+	mode: 'development',
 
-    entry: {
-        index: './src/js/index.js'
-    },
+	entry: {
+		index: './src/js/index.js',
+	},
 
-    browserslist: [
-        'iOS >= 9', 'Android >= 4', 'last 2 ChromeAndroid versions'
-    ],
+	browserslist: ['iOS >= 9', 'Android >= 4', 'last 2 ChromeAndroid versions'],
 
-    optimization: {
-        occurrenceOrder: true
-    }
+	optimization: {
+		occurrenceOrder: true,
+	},
 };
