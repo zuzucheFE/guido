@@ -1,8 +1,10 @@
-module.exports = {
-    mode: 'development',
+'use strict';
 
-    entry: {
-        'inline-css': './src/js/inline-css.js',
-        'url-css': './src/js/url-css.js'
-    }
+module.exports = {
+	mode: 'development',
+
+	entry: {
+		'inline-css': './src/js/inline-css.js',
+		'url-css': './src/js/url-css.js',
+	},
 };

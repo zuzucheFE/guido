@@ -1,7 +1,9 @@
-module.exports = {
-    mode: 'development',
+'use strict';
 
-    entry: {
-        index: './js/index.js'
-    }
+module.exports = {
+	mode: 'development',
+
+	entry: {
+		index: './js/index.js',
+	},
 };

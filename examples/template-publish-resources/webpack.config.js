@@ -1,11 +1,13 @@
+'use strict';
+
 module.exports = {
-    mode: 'development',
+	mode: 'development',
 
-    entry: {
-        index: './src/js/index.js'
-    },
+	entry: {
+		index: './src/js/index.js',
+	},
 
-    output: {
-        publicPath: 'http://www.example.com/assets/'
-    }
+	output: {
+		publicPath: 'http://www.example.com/assets/',
+	},
 };
