@@ -210,6 +210,9 @@ describe('Build', function() {
     it('template-minify', function() {
         return testBuild({}, 'template-minify');
     });
+    it('template-nunjucks', function() {
+        return testBuild({}, 'template-nunjucks');
+    });
     it('template-partial', function() {
         return testBuild({}, 'template-partial');
     });

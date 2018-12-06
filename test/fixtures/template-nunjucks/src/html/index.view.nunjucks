@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+{%include 'common/header.nj' %}
+<div id="root">
+    {%include 'common/loading.nj' %}
+</div>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
