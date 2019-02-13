@@ -1,4 +1,5 @@
-let tpl = require('../html/tpl.handlebars');
+
+import tpl from '../pages/tpl.handlebars';
 
 let $el = document.getElementById('J-tpl');
 
