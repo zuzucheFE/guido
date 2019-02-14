@@ -9,6 +9,12 @@ branches:
   only:
     - master
 
+addons:
+  homebrew:
+    packages:
+      - libpng
+    update: true
+
 matrix:
   include:
     - os: osx
@@ -32,6 +38,6 @@ matrix:
 
 before_install:
  - 'if [ $TEST_SUITE = "linux" ]; then sudo apt-get update && sudo apt-get install -y autoconf libtool pkg-config nasm build-essential; fi'
- - 'if [ $TEST_SUITE = "osx" ]; then sudo brew install libpng; fi'
+# - 'if [ $TEST_SUITE = "osx" ]; then brew install libpng; fi'
 
 script: npm run travis:test
