@@ -13,7 +13,6 @@ addons:
   homebrew:
     packages:
       - libpng
-    update: true
 
 matrix:
   include:
