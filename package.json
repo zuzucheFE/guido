@@ -23,6 +23,7 @@
   "scripts": {
     "build:examples": "cd examples && node buildAll.js",
     "test": "jest",
+    "travis:test": "npm run jest",
     "prettier": "prettier --trailing-comma es5 --single-quote --write 'lib/*/*.js'"
   },
   "license": "MIT",
