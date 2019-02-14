@@ -1,3 +1,4 @@
+sudo: true
 dist: trusty
 language: node_js
 
@@ -31,7 +32,7 @@ matrix:
       env: TEST_SUITE=linux
 
 before_install:
- - 'if [ "$TEST_SUITE" = "linux" ]; then apt-get update && apt-get install -y autoconf libtool pkg-config nasm build-essential; fi'
- - 'if [ "$TEST_SUITE" = "osx" ]; then brew install libpng; fi'
+ - 'if [ $TEST_SUITE = "linux" ]; then apt-get update && apt-get install -y autoconf libtool pkg-config nasm build-essential; fi'
+ - 'if [ $TEST_SUITE = "osx" ]; then brew install libpng; fi'
 
 script: npm run travis:test
