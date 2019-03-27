@@ -3,8 +3,6 @@ id: supported-browsers
 title: 浏览器兼容性
 ---
 
-### 浏览器支持
-
 支持所有 `现代浏览器`，可以通过 `browserslist` 配置项进行配置
 
 配置项传递给 `@babel/preset-env` 和 `autoprefixer` 对代码进行转译

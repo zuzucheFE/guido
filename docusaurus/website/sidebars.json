@@ -3,10 +3,13 @@
     "快速开始": [
       "getting-started",
       "folder-structure",
-      "supported-browsers-features"
+      "supported-browsers"
     ],
     "教程": [
-
+      "babel-config",
+      "inline-resource",
+      "image-sprite",
+      "svg-sprite"
     ]
   }
 }

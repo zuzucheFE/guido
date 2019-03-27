@@ -26,4 +26,8 @@ title: Babel配置
  - [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
 
 
-针对项目以外的脚本（如：`node_modules`），只会使用：`@babel/preset-env`、`@babel/plugin-transform-runtime` 和 `@babel/plugin-syntax-dynamic-import`
+针对项目以外的脚本（如：`node_modules`），只会使用：
+
+ - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
+ - [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
+ - [@babel/plugin-syntax-dynamic-import](https://www.npmjs.com/package/@babel/plugin-syntax-dynamic-import)
