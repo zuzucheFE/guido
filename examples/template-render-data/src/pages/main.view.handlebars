@@ -10,6 +10,8 @@
     <div>{{name}}</div>
 {{/each}}
 
-<script src="../js/index.js"></script>
+{{#each assets.index.js}}
+    <script src="{{url}}"></script>
+{{/each}}
 </body>
 </html>

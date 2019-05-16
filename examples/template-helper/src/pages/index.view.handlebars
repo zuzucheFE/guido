@@ -8,6 +8,8 @@
 
 <div id="J-tpl"></div>
 
-<script src="../js/index.js"></script>
+{{#each assets.index.js}}
+    <script src="{{url}}"></script>
+{{/each}}
 </body>
 </html>

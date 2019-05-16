@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>template-css-inline</title>
-    <link rel="stylesheet" href="/css/index.css">
+    {{#each assets.index.css}}
+        <link rel="stylesheet" href="{{url}}">
+    {{/each}}
+
 </head>
 <body>
 
-<script src="/js/index.js"></script>
+{{#each assets.index.js}}
+    <script src="{{url}}"></script>
+{{/each}}
 </body>
 </html>

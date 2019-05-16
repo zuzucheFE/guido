@@ -11,6 +11,8 @@
 <img src="https://www.abc.com/images/s.gif">
 
 <script src="https://www.abc.com/js/a.js"></script>
-<script src="/js/index.js"></script>
+{{#each assets.index.js}}
+    <script src="{{url}}"></script>
+{{/each}}
 </body>
 </html>
