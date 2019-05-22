@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "基于webpack4的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "autoprefixer": "9.5.1",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.6",
-    "babel-preset-zuzuche": "2.4.1",
+    "babel-preset-zuzuche": "2.4.2",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "chalk": "2.4.2",
     "css-loader": "2.1.1",
@@ -78,14 +78,14 @@
     "text-table": "0.2.0",
     "url": "0.11.0",
     "url-loader": "1.1.2",
-    "webpack": "4.32.0",
+    "webpack": "4.32.1",
     "webpack-dev-server": "3.4.1",
     "webpack-merge": "4.2.1",
     "webpackbar": "3.2.0"
   },
   "devDependencies": {
-    "@babel/runtime-corejs3": "^7.4.4",
-    "husky": "^2.2.0",
+    "@babel/runtime-corejs3": "^7.4.5",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
     "lint-staged": "^8.1.6",
     "prettier": "^1.17.1"
