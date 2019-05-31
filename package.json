@@ -33,7 +33,7 @@
   "bin": {
     "guido": "./bin/guido.js"
   },
-  "main": "lib/guido.js",
+  "main": "lib/service.js",
   "dependencies": {
     "address": "1.1.0",
     "assets-webpack-plugin": "3.9.10",
@@ -60,7 +60,7 @@
     "hard-source-webpack-plugin": "0.13.1",
     "html-webpack-plugin": "4.0.0-beta.5",
     "image-webpack-loader": "4.6.0",
-    "mini-css-extract-plugin": "0.6.0",
+    "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "postcss-loader": "3.0.0",
@@ -74,11 +74,11 @@
     "svg-url-loader": "2.3.2",
     "svgo": "1.2.2",
     "svgo-loader": "2.2.0",
-    "terser-webpack-plugin": "1.2.4",
+    "terser-webpack-plugin": "1.3.0",
     "text-table": "0.2.0",
     "url": "0.11.0",
     "url-loader": "1.1.2",
-    "webpack": "4.32.1",
+    "webpack": "^4.32.2",
     "webpack-dev-server": "3.4.1",
     "webpack-merge": "4.2.1",
     "webpackbar": "3.2.0"
