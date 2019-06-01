@@ -5,6 +5,7 @@
 process.on('unhandledRejection', err => {
 	throw err;
 });
+const path = require('path');
 const spawn = require('cross-spawn');
 const chalk = require('chalk');
 
@@ -12,7 +13,7 @@ const script = process.argv.slice(2)[0];
 if (script === 'build' || script === 'start' || script === 'test') {
 	const result = spawn.sync(
 		'node',
-		[require.resolve('../lib/scripts/' + script)],
+		[require.resolve(path.join(__dirname, '../lib/scripts/' + script))],
 		{ stdio: 'inherit' }
 	);
 
