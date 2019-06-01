@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "4.3.2",
+  "version": "4.4.0",
   "description": "基于webpack4的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
@@ -78,8 +78,8 @@
     "text-table": "0.2.0",
     "url": "0.11.0",
     "url-loader": "1.1.2",
-    "webpack": "^4.32.2",
-    "webpack-dev-server": "3.4.1",
+    "webpack": "4.32.2",
+    "webpack-dev-server": "3.5.1",
     "webpack-merge": "4.2.1",
     "webpackbar": "3.2.0"
   },
