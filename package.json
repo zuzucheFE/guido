@@ -59,7 +59,10 @@
     "handlebars-loader": "1.7.1",
     "hard-source-webpack-plugin": "0.13.1",
     "html-webpack-plugin": "4.0.0-beta.5",
-    "image-webpack-loader": "4.6.0",
+    "image-webpack-loader": "5.0.0",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "imagemin-svgo": "7.0.0",
     "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
@@ -79,16 +82,16 @@
     "url": "0.11.0",
     "url-loader": "2.0.0",
     "webpack": "4.33.0",
-    "webpack-dev-server": "3.6.0",
+    "webpack-dev-server": "3.7.1",
     "webpack-merge": "4.2.1",
     "webpackbar": "3.2.0"
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.4.5",
-    "husky": "^2.3.0",
+    "husky": "^2.4.0",
     "jest": "^24.8.0",
-    "lint-staged": "^8.1.6",
-    "prettier": "^1.17.1"
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2"
   },
   "husky": {
     "hooks": {
