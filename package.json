@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "4.6.3",
+  "version": "4.7.0",
   "description": "基于webpack4的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
