@@ -1,5 +1,7 @@
 'use strict';
 
+const path = require('path');
+
 module.exports = {
 	mode: 'production',
 	entry: {
@@ -27,4 +29,7 @@ module.exports = {
 			},
 		},
 	},
+    html: {
+        templateCWD: path.join(__dirname, 'src', 'pages')
+    }
 };
