@@ -17,22 +17,22 @@ addons:
 matrix:
   include:
     - os: osx
-      node_js: 8
-      env: TEST_SUITE=osx
-    - os: osx
-      node_js: 10
-      env: TEST_SUITE=osx
-    - os: osx
       node_js: 11
       env: TEST_SUITE=osx
-    - os: linux
-      node_js: 8
-      env: TEST_SUITE=linux
-    - os: linux
-      node_js: 10
-      env: TEST_SUITE=linux
+    - os: osx
+      node_js: 12
+      env: TEST_SUITE=osx
+    - os: osx
+      node_js: 13
+      env: TEST_SUITE=osx
     - os: linux
       node_js: 11
+      env: TEST_SUITE=linux
+    - os: linux
+      node_js: 12
+      env: TEST_SUITE=linux
+    - os: linux
+      node_js: 13
       env: TEST_SUITE=linux
 
 before_install:
