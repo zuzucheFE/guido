@@ -1,6 +1,6 @@
 {
   "name": "guido",
-  "version": "4.8.1",
+  "version": "4.8.2",
   "description": "基于webpack4的一键式开发工具，集成handlebars、雪碧图、SVG Sprite、自定义资源注入等方式",
   "repository": {
     "type": "git",
@@ -82,7 +82,7 @@
     "imagemin-pngquant": "8.0.0",
     "imagemin-svgo": "7.1.0",
     "mini-css-extract-plugin": "0.9.0",
-    "node-sass": "4.13.1",
+    "node-sass": "4.14.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "postcss-loader": "3.0.0",
     "postcss-safe-parser": "4.0.2",
