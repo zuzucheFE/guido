@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "babel-preset-zuzuche",
+      {
+        "env": {
+          "targets": {
+            "browsers": [
+              "iOS >= 10",
+              "Android >= 4",
+              "last 2 ChromeAndroid versions"
+            ]
+          }
+        }
+      }
+    ]
+  ],
+  "plugins": [["@babel/plugin-proposal-decorators", { "legacy": true }]]
+}
