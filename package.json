@@ -100,7 +100,7 @@
     "url": "0.11.0",
     "url-loader": "4.0.0",
     "webpack": "4.42.1",
-    "webpack-dev-server": "3.10.3",
+    "webpack-dev-server": "5.2.1",
     "webpack-merge": "4.2.2",
     "webpackbar": "4.0.0"
   }
