@@ -73,7 +73,7 @@
     "friendly-errors-webpack-plugin": "1.7.0",
     "glob": "7.1.6",
     "gzip-size": "5.1.1",
-    "handlebars": "4.7.3",
+    "handlebars": "4.7.9",
     "handlebars-loader": "1.7.1",
     "hard-source-webpack-plugin": "0.13.1",
     "html-webpack-plugin": "4.0.0-beta.11",
